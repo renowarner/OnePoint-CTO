@@ -5,14 +5,16 @@
     <title>Redirecting...</title>
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
-      // https://github.com/rafgraph/spa-github-pages
       // This script takes the current url and converts the path and query string into just a query string,
       // then redirects the browser to the custom 404.html page with the new query string.
       var l = window.location;
+      var segments = l.pathname.split('/');
+      var repoName = segments[1];
+      var path = '/' + segments.slice(2).join('/');
+      
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + 1).join('/') + '/?p=/' +
-        l.pathname.split('/').slice(1 + 1).join('/').replace(/&/g, '~and~') +
+        '/' + repoName + '/?p=' + encodeURIComponent(path) +
         (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
         l.hash
       );
