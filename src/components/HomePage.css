@@ -21,14 +21,27 @@
 }
 
 .hero-headline {
-  font-size: clamp(2.5em, 8vw, 4.5em);
   margin-bottom: 25px;
   color: #ffffff;
   letter-spacing: 1px;
-  line-height: 1.1;
+  line-height: 1.2;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.headline-main {
+  font-size: clamp(2em, 7vw, 3.8em);
+  font-weight: bold;
+}
+
+.headline-sub {
+  font-size: clamp(1.5em, 5vw, 2.5em);
+  color: #007bff; /* Giving the second part some color to emphasize the outcome */
+  font-weight: normal;
 }
 
 .hero-section .hero-tagline {

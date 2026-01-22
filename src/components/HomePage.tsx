@@ -6,7 +6,10 @@ const HomePage = () => {
     <div className="homepage">
       <section id="hero" className="hero-section">
         <div className="container">
-          <h2 className="hero-headline">Stop Trading Time for Admin. I Build Systems That Run Your Business For You.</h2>
+          <h2 className="hero-headline">
+            <span className="headline-main">Stop Trading Time for Admin.</span>
+            <span className="headline-sub">I Build Systems That Run Your Business For You.</span>
+          </h2>
           <p className="hero-tagline">
             Specializing in 1-man shops and micro-businesses. I implement AI and no-code automation to buy back your time and increase your profit margins—without adding headcount.
           </p>
