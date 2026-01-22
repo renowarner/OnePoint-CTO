@@ -6,12 +6,14 @@ const ManagedAiChatbotsPage = () => {
       <section id="managed-ai-chatbots" className="managed-ai-chatbots-section">
         <div className="container">
           <p>
-            Revolutionize your customer engagement and streamline operations with our expertly managed AI chatbot solutions. From initial design to ongoing optimization, we handle everything, allowing you to focus on your core business. Our chatbots are tailored to your specific needs, providing instant support, gathering leads, and automating routine tasks.
+            Revolutionize your customer engagement and streamline operations with our expertly managed AI chatbot solutions. My chatbots are designed to do more than just answer questions—they are powerful tools for active engagement, automated lead capture, and intelligent lead qualifying.
           </p>
           <p>
-            Experience enhanced efficiency, reduced operational costs, and improved customer satisfaction with intelligent, always-available AI assistance.
+            By providing instant, 24/7 support, these intelligent assistants ensure that every visitor is greeted and engaged immediately. They can capture vital contact information and qualify prospects by asking the right questions, ensuring that your team focuses their energy only on the most promising opportunities.
           </p>
-          {/* Add more specific content or features here later */}
+          <p>
+            My service includes active management, meaning your chatbot is never just "set up and forgotten." I continuously monitor performance, refine the knowledge base, and expand capabilities as your business needs arise and technology evolves. This ongoing partnership ensures your AI solution remains a cutting-edge asset that grows alongside your company.
+          </p>
         </div>
       </section>
     </div>
