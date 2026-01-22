@@ -16,8 +16,8 @@ const ServicesPage = () => {
               <p>Efficient systems built with Zapier, Make.com, and more.</p>
             </Link>
             <Link to="/system-administration" className="service-card">
-              <h3>System Administration</h3>
-              <p>Comprehensive management and maintenance of your company's tech.</p>
+              <h3>Virtual CTO Service</h3>
+              <p>Comprehensive technical leadership, management, and maintenance for your company's tech.</p>
             </Link>
           </div>
         </div>

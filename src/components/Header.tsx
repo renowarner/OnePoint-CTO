@@ -17,7 +17,7 @@ const Header = () => {
                 <ul className="dropdown-menu">
                   <li><NavLink to="/managed-ai-chatbots">Managed AI Chatbots</NavLink></li>
                   <li><NavLink to="/no-code-system-design">No-Code System Design</NavLink></li>
-                  <li><NavLink to="/system-administration">System Administration</NavLink></li>
+                  <li><NavLink to="/system-administration">Virtual CTO Service</NavLink></li>
                 </ul>
               </li>
               <li><NavLink to="/contact">Contact</NavLink></li>
