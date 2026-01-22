@@ -5,7 +5,6 @@ const NoCodeSystemDesign = () => {
     <div className="no-code-page-container">
       <section className="no-code-section">
         <div className="container">
-          <h2>No-Code System Design</h2>
           <p>
             Efficiency shouldn't require a dedicated engineering team. I specialize in designing and implementing robust business systems using powerful "no-code" and "low-code" tools like Zapier, Make.com, and various CRM integrations.
           </p>

@@ -5,7 +5,6 @@ const SystemAdministration = () => {
     <div className="sys-admin-page-container">
       <section className="sys-admin-section">
         <div className="container">
-          <h2>System Administration</h2>
           <p>
             I offer comprehensive administrative capabilities to oversee your entire company's technological ecosystem. From initial architecture and rebuilding legacy systems to daily management and maintenance, I ensure your business runs smoothly and securely.
           </p>
