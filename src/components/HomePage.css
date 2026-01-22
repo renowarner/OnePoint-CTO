@@ -34,13 +34,13 @@
 }
 
 .headline-main {
-  font-size: clamp(2em, 7vw, 3.8em);
+  font-size: clamp(1.8em, 6vw, 3.2em);
   font-weight: bold;
 }
 
 .headline-sub {
-  font-size: clamp(1.5em, 5vw, 2.5em);
-  color: #007bff; /* Giving the second part some color to emphasize the outcome */
+  font-size: clamp(1.2em, 4vw, 2.2em);
+  color: #ffffff;
   font-weight: normal;
 }
 
