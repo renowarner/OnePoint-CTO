@@ -4,7 +4,6 @@ const ConsultationPage = () => {
   return (
     <div className="container">
       <div className="consultation-content">
-        <h2>Schedule a Consultation</h2>
         <p>
           Please embed your calendar link below.
         </p>

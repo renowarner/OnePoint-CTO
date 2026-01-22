@@ -5,7 +5,6 @@ const SkillsToolingPage = () => {
     <div className="skills-tooling-page-container">
       <section id="skills-tooling" className="skills-tooling-section">
         <div className="container">
-          <h2>Skills & Tooling</h2>
           <div className="skills-tooling-grid">
             <div className="skills-tooling-item">Client Relations & Client Services</div>
             <div className="skills-tooling-item">Small Business Technology Management</div>

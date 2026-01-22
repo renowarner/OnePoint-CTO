@@ -46,3 +46,8 @@
   color: #007bff; /* Highlight color on hover */
 }
 
+.main-nav a.active {
+  color: #007bff; /* Blue color for active link */
+  font-weight: bold; /* Bold text for active link */
+}
+
