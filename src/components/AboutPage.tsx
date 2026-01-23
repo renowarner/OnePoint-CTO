@@ -27,7 +27,7 @@ const AboutPage = () => {
               <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
                 <li><strong>The Audit:</strong> Identifying the manual friction and repetitive tasks eating your margins.</li>
                 <li><strong>The Build:</strong> Implementing a custom, lean technical foundation tailored to your workflow.</li>
-                <li><strong>The Freedom:</strong> Your systems handle the admin, while you focus exclusively on your "zone of genius."</li>
+                <li><strong>The Freedom:</strong> Your systems handle the admin, while you focus exclusively on growing your business.</li>
               </ul>
               <p>
                 I act as your dedicated technical partner, providing the high-level strategy of a CTO with the tactical execution of an automation expert.
