@@ -1,5 +1,6 @@
 import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
+import logo from '../assets/logo_icon.png';
 
 const Header = () => {
   return (
@@ -7,7 +8,10 @@ const Header = () => {
       <div className="container">
         <div className="header-content">
           <h1 className="logo">
-            <Link to="/">ONEPOINT</Link>
+            <Link to="/" className="logo-link">
+              <img src={logo} alt="OnePoint CTO Logo Icon" className="header-logo" />
+              <span className="logo-text">OnePoint <span className="logo-text-accent">CTO</span></span>
+            </Link>
           </h1>
           <nav className="main-nav">
             <ul>

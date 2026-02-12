@@ -1,6 +1,6 @@
 .homepage section {
   padding: 80px 0;
-  border-bottom: 1px solid #222; /* Subtle separator between sections */
+  border-bottom: 1px solid var(--bg-navy-lighter);
 }
 
 .homepage section:last-child {
@@ -17,40 +17,40 @@
 .hero-section {
   text-align: center;
   padding: 140px 0;
-  background-color: #121212;
+  background-color: var(--bg-navy);
 }
 
 .hero-headline {
   margin-bottom: 25px;
-  color: #ffffff;
+  color: var(--text-white);
   letter-spacing: 1px;
   line-height: 1.2;
-  max-width: 1200px; /* Increased max-width */
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  overflow: hidden; /* Prevent potential scrollbars from nowrap */
+  overflow: hidden;
 }
 
 .headline-main {
-  font-size: clamp(1.2em, 5.2vw, 3.0em);
+  font-size: clamp(1.0em, 3.2vw, 1.9em);
   font-weight: bold;
   white-space: nowrap;
 }
 
 .headline-sub {
-  font-size: clamp(0.8em, 3.4vw, 1.8em);
-  color: #ffffff;
+  font-size: clamp(0.8em, 2.8vw, 1.4em);
+  color: var(--accent-cyan);
   font-weight: normal;
   white-space: nowrap;
 }
 
 .hero-section .hero-tagline {
-  font-size: clamp(1.2em, 4vw, 1.6em);
+  font-size: clamp(1em, 3vw, 1.2em);
   margin-bottom: 40px;
-  color: #aaa;
+  color: var(--text-gray);
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -62,8 +62,8 @@
 }
 
 .btn-large {
-  font-size: 1.4em;
-  padding: 20px 40px;
+  font-size: 1.1em;
+  padding: 15px 30px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -71,10 +71,10 @@
 
 /* Section Common */
 .section-title {
-  font-size: clamp(2.5em, 6vw, 3.5em);
+  font-size: clamp(2em, 5vw, 2.8em);
   text-align: center;
   margin-bottom: 60px;
-  color: #ffffff;
+  color: var(--text-white);
   position: relative;
 }
 
@@ -82,7 +82,7 @@
   content: '';
   width: 100px;
   height: 4px;
-  background-color: #007bff;
+  background-color: var(--accent-cyan);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -92,7 +92,7 @@
 /* Process Section */
 .process-section {
   padding: 100px 0;
-  background-color: #1a1a1a;
+  background-color: var(--bg-navy-light);
 }
 
 .process-grid {
@@ -105,21 +105,21 @@
 .process-item {
   text-align: center;
   padding: 40px;
-  background-color: #222;
+  background-color: var(--bg-navy);
   border-radius: 12px;
   transition: transform 0.3s ease;
-  border: 1px solid #333;
+  border: 1px solid var(--bg-navy-lighter);
 }
 
 .process-item:hover {
   transform: translateY(-10px);
-  border-color: #007bff;
+  border-color: var(--accent-cyan);
 }
 
 .process-number {
   font-size: 3em;
   font-weight: bold;
-  color: #007bff;
+  color: var(--accent-cyan);
   margin-bottom: 20px;
   opacity: 0.5;
 }
@@ -127,24 +127,24 @@
 .process-item h3 {
   font-size: 1.8em;
   margin-bottom: 15px;
-  color: #fff;
+  color: var(--text-white);
 }
 
 .process-item p {
-  color: #ccc;
+  color: var(--text-gray);
   line-height: 1.6;
 }
 
 /* Track Record Section */
 .track-record-section {
   padding: 100px 0;
-  background-color: #121212;
+  background-color: var(--bg-navy);
 }
 
 .track-record-intro {
   text-align: center;
   font-size: 1.4em;
-  color: #aaa;
+  color: var(--text-gray);
   max-width: 800px;
   margin: 0 auto 80px;
 }
@@ -156,27 +156,27 @@
 }
 
 .experience-item {
-  background-color: #1a1a1a;
+  background-color: var(--bg-navy-light);
   padding: 30px;
   border-radius: 8px;
-  border-left: 4px solid #007bff;
+  border-left: 4px solid var(--accent-cyan);
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
 .experience-item h4 {
-  color: #fff;
+  color: var(--text-white);
   font-size: 1.2em;
   margin-bottom: 10px;
 }
 
 .experience-org {
-  color: #007bff;
+  color: var(--accent-cyan);
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .experience-date {
-  color: #777;
+  color: var(--text-gray);
   font-size: 0.9em;
 }
 
@@ -199,7 +199,7 @@
 
 .experience-item li::before {
   content: '•';
-  color: #007bff;
+  color: var(--accent-cyan);
   position: absolute;
   left: 0;
   top: 0;
@@ -212,20 +212,23 @@
 .contact-section p {
   font-size: 1.2em;
   margin-bottom: 40px;
-  color: #ccc;
+  color: var(--text-slate);
 }
 
 .btn {
   display: inline-block;
-  background-color: #007bff;
-  color: #ffffff;
+  background-color: transparent;
+  color: var(--accent-cyan);
+  border: 1px solid var(--accent-cyan);
   padding: 15px 30px;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.1em;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: rgba(0, 210, 255, 0.1);
+  transform: translateY(-3px);
 }
+
