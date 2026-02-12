@@ -1,7 +1,12 @@
 :root {
-  --background-color-dark-main: #121212; /* Dark background for main content */
-  --text-color-light: #ffffff; /* Light text color */
-  --font-family: 'Times New Roman', Times, serif;
+  --bg-navy: #0A192F;
+  --bg-navy-light: #112240;
+  --bg-navy-lighter: #233554;
+  --accent-cyan: #00D2FF;
+  --text-white: #FFFFFF;
+  --text-gray: #8892B0;
+  --text-slate: #CCD6F6;
+  --font-main: 'Times New Roman', Times, serif;
 }
 
 html {
@@ -9,17 +14,16 @@ html {
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-main);
   margin: 0;
   padding: 0;
-  background-color: var(--background-color-dark-main);
-  color: var(--text-color-light);
+  background-color: var(--bg-navy);
+  color: var(--text-slate);
   line-height: 1.6;
-  scroll-behavior: smooth;
 }
 
 .container {
-  max-width: 1200px; /* Wider container for content */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }

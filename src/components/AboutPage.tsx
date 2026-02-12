@@ -12,25 +12,28 @@ const AboutPage = () => {
             </div>
             <div className="about-text">
               <p>
-                <strong>Stop trading your time for administrative friction.</strong> You started your business to practice your craft, not to manage spreadsheets, chase leads, and troubleshoot software.
+                <strong>The "Three Expert" Problem:</strong> Most small businesses are told they need a separate web developer, a marketing agency, and an IT specialist to survive.
               </p>
               <p>
-                As a <strong>Virtual CTO</strong> and <strong>AI Operations Architect</strong>, I help high-performing solopreneurs and micro-businesses scale their profitability without adding headcount. I specialize in building "hands-off" technical foundations that allow 1-man shops to compete with established agencies.
+                But three separate experts means three separate bills, three disconnected systems, and three times the communication overhead. It's a recipe for technical friction and wasted profit.
               </p>
               <p>
-                Since 2014, I’ve operated as a <strong>Systems & Automation Strategist</strong> for industry leaders, refining a "Profit-First" approach to technology. I don't just implement tools; I architect the entire technical lifecycle of your business to ensure your stack is an asset, not a liability.
+                At <strong>OnePoint</strong>, I provide a singular alternative. As your <strong>Virtual CTO</strong>, I act as your single point of technical leadership, integrating your entire stack—from AI-driven automation and lead generation to core systems management and SEO—into one cohesive, profitable engine.
               </p>
               <p>
-                <strong>The Audit &rarr; Build &rarr; Freedom Framework:</strong><br />
-                I get micro-businesses profitable as fast as possible by following a proven 3-step process:
+                I don't just "manage" your tech; I align it with your business goals to reduce costs, eliminate technical debt, and create a baseline for sustainable growth.
+              </p>
+              <p>
+                <strong>The OnePoint Framework: Audit &rarr; Integrate &rarr; Scale</strong><br />
+                I help small businesses achieve technical stability and maximum profitability through a three-step process:
               </p>
               <ul style={{ listStyleType: 'none', paddingLeft: 0 }}>
-                <li><strong>The Audit:</strong> Identifying the manual friction and repetitive tasks eating your margins.</li>
-                <li><strong>The Build:</strong> Implementing a custom, lean technical foundation tailored to your workflow.</li>
-                <li><strong>The Freedom:</strong> Your systems handle the admin, while you focus exclusively on growing your business.</li>
+                <li><strong>The Audit:</strong> A uniform deep-dive to identify technical waste, fragmented data, and untapped automation opportunities.</li>
+                <li><strong>The Integration:</strong> Synchronizing your marketing, operations, and AI tools into a single, unified workflow.</li>
+                <li><strong>The Scale:</strong> Your technical foundation becomes your most efficient employee, handling the admin while you focus on high-level growth.</li>
               </ul>
               <p>
-                I act as your dedicated technical partner, providing the high-level strategy of a CTO with the tactical execution of an automation expert.
+                Whether you need a full systems overhaul or ongoing technical leadership, I provide the strategic oversight and tactical execution required to turn your technology into a competitive advantage.
               </p>
             </div>
           </div>

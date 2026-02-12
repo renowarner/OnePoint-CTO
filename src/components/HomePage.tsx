@@ -7,14 +7,14 @@ const HomePage = () => {
       <section id="hero" className="hero-section">
         <div className="container">
           <h2 className="hero-headline">
-            <span className="headline-main">Stop Trading Time for Admin</span>
-            <span className="headline-sub">I Build Systems That Run Your Business For You</span>
+            <span className="headline-main">One Partner. One System. Total Control.</span>
+            <span className="headline-sub">Strategic V-CTO Services for Small Businesses</span>
           </h2>
           <p className="hero-tagline">
-            Specializing in 1-man shops and micro-businesses. I implement AI and no-code automation to buy back your time and increase your profit margins—without adding headcount.
+            Managing multiple specialists means separate bills and disconnected systems. OnePoint integrates your automation, AI, and marketing into one cohesive engine—reducing costs and maximizing your baseline income.
           </p>
           <div className="hero-cta">
-            <Link to="/schedule-consultation" className="btn btn-primary btn-large">Book Your Systems Audit</Link>
+            <Link to="/schedule-consultation" className="btn btn-primary btn-large">Book Your V-CTO Audit</Link>
           </div>
         </div>
       </section>
@@ -26,17 +26,17 @@ const HomePage = () => {
             <div className="process-item">
               <div className="process-number">1</div>
               <h3>The Audit</h3>
-              <p>We identify the manual friction and repetitive tasks slowing you down and eating your margins.</p>
+              <p>We deep-dive into your technical stack to identify fragmented systems, unused SaaS, and manual friction.</p>
             </div>
             <div className="process-item">
               <div className="process-number">2</div>
-              <h3>The Build</h3>
-              <p>I implement custom AI and No-Code systems (Zapier, Keap, etc.) tailored to your specific workflow.</p>
+              <h3>The Integration</h3>
+              <p>I build and synchronize custom AI, lead capture, and automation tools into a single, unified technical roadmap.</p>
             </div>
             <div className="process-item">
               <div className="process-number">3</div>
-              <h3>The Freedom</h3>
-              <p>Your systems handle the admin, lead capture, and follow-ups while you focus on your core craft.</p>
+              <h3>The Growth</h3>
+              <p>Your systems become your primary employee—handling the admin while you focus on scaling profitability.</p>
             </div>
           </div>
         </div>
@@ -44,13 +44,13 @@ const HomePage = () => {
 
       <section id="track-record" className="track-record-section">
         <div className="container">
-          <h2 className="section-title">Proven Track Record</h2>
-          <p className="track-record-intro">Since 2014, I've been optimizing operations and building robust technical foundations for industry leaders.</p>
+          <h2 className="section-title">Proven Technical Leadership</h2>
+          <p className="track-record-intro">Over a decade of experience optimizing operations and building robust technical foundations for industry leaders.</p>
           <div className="experience-grid">
             <div className="experience-item">
-              <h4>Owner and Principal Consultant</h4>
-              <p className="experience-org">Reno Warner Consulting</p>
-              <p className="experience-date">2022 - Current</p>
+              <h4>Virtual CTO</h4>
+              <p className="experience-org">OnePoint</p>
+              <p className="experience-date">2026 - Current</p>
             </div>
             <div className="experience-item">
               <h4>Lead Tech, Automation Engineer, Systems Support</h4>
