@@ -11,7 +11,7 @@ const HomePage = () => {
             <span className="headline-sub">Strategic V-CTO Services for Small Businesses</span>
           </h2>
           <p className="hero-tagline">
-            Three experts means three bills and three disconnected systems. OnePoint integrates your automation, AI, and marketing into one cohesive engine—reducing costs and maximizing your baseline income.
+            Managing multiple specialists means separate bills and disconnected systems. OnePoint integrates your automation, AI, and marketing into one cohesive engine—reducing costs and maximizing your baseline income.
           </p>
           <div className="hero-cta">
             <Link to="/schedule-consultation" className="btn btn-primary btn-large">Book Your V-CTO Audit</Link>
