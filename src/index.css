@@ -1,0 +1,25 @@
+:root {
+  --background-color-dark-main: #121212; /* Dark background for main content */
+  --text-color-light: #ffffff; /* Light text color */
+  --font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color-dark-main);
+  color: var(--text-color-light);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1200px; /* Wider container for content */
+  margin: 0 auto;
+  padding: 20px;
+}

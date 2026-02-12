@@ -1,0 +1,65 @@
+/* C:\Users\Devlin\Desktop\Gemini\Active Projects\Website\src\components\Footer.css */
+.site-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0; /* Even further reduced padding */
+  text-align: center;
+}
+
+.site-footer .container {
+  max-width: 1200px; /* Keep max-width for the container */
+  margin: 0 auto;
+  padding: 0 5px; /* Reduced padding for container */
+  display: flex;
+  /* Removed flex-wrap: wrap; to prevent stacking */
+  justify-content: center;
+  gap: 5px; /* Further reduced gap */
+  /* Ensure content doesn't shrink too much for very small screens */
+  min-width: min-content; /* Allow container to shrink to content but not less */
+}
+
+.site-footer h2 {
+  color: #fff;
+  margin-bottom: 10px; /* Reduced margin */
+  width: 100%;
+  font-size: 1.8em; /* Even smaller font size for heading */
+}
+
+.site-footer .experience-item {
+  background-color: #444;
+  margin-bottom: 0;
+  padding: 3px 5px; /* Even further reduced padding */
+  border-radius: 3px; /* Even smaller border-radius */
+  /* Flex properties to ensure 4 items fit without wrapping */
+  flex: 0 0 calc(25% - 5px); /* Fixed width for 4 items, no shrinking/growing beyond that */
+  max-width: calc(25% - 5px); /* Explicit max-width for 4 items */
+  min-width: 150px; /* Ensure a minimum readable width for each item */
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch; /* Make items in a row equal height */
+  overflow: hidden; /* Hide overflowing content if it still happens */
+  white-space: normal; /* Allow text to wrap within the item */
+}
+
+/* Removed all media queries related to flex and max-width for experience-item as stacking is prevented */
+/* If content overflows horizontally, consider adjusting font sizes or min-width on container */
+
+.site-footer .experience-item h4 {
+  color: #eee;
+  margin-bottom: 1px; /* Further reduced margin */
+  font-size: 0.75em; /* Even smaller font size */
+  line-height: 1.1; /* Reduced line height */
+}
+
+.site-footer .experience-item p {
+  color: #ccc;
+  font-size: 0.6em; /* Even smaller font size */
+  line-height: 1.1; /* Reduced line height */
+}
+
+.site-footer .copyright {
+  font-size: 0.7em; /* Tiny font size */
+  color: #888; /* Slightly subdued color */
+  margin-top: 10px; /* Some spacing from the content above */
+}

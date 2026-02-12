@@ -1,0 +1,104 @@
+.header {
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff; /* Light text */
+  padding: 15px 0;
+  border-bottom: 1px solid #333; /* Subtle bottom border */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Constrain content width */
+  margin: 0 auto; /* Center the content */
+  padding: 0 20px; /* Add horizontal padding */
+}
+
+.logo a {
+  font-size: 28px; /* Larger font for logo */
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff; /* White color for logo */
+  text-transform: uppercase; /* Uppercase text */
+  letter-spacing: 2px; /* Letter spacing */
+}
+
+.main-nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav li {
+  margin-left: 30px; /* Increased spacing between nav items */
+  position: relative; /* For dropdown positioning */
+}
+
+/* Dropdown Styles */
+.dropdown-trigger {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+  padding: 5px 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dropdown:hover .dropdown-trigger {
+  color: #007bff;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1a1a1a;
+  min-width: 220px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+  z-index: 1000;
+  padding: 10px 0;
+  border-radius: 4px;
+  list-style: none;
+  margin: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  margin: 0 !important;
+  text-align: left;
+}
+
+.dropdown-menu a {
+  padding: 10px 20px;
+  display: block;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a.active {
+  background-color: #333;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #ffffff; /* White color for nav links */
+  font-size: 17px;
+  padding: 5px 0;
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.main-nav a:hover {
+  color: #007bff; /* Highlight color on hover */
+}
+
+.main-nav a.active {
+  color: #007bff; /* Blue color for active link */
+  font-weight: bold; /* Bold text for active link */
+}
+
