@@ -30,6 +30,12 @@
   transition: all 0.3s ease;
 }
 
+.blog-card-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
 .blog-card:hover {
   transform: translateY(-5px);
   border-color: var(--accent-cyan);

@@ -43,15 +43,17 @@ const BlogPage = () => {
           <div className="blog-grid">
             {blogPosts.map(post => (
               <article key={post.id} className="blog-card">
-                <div className="blog-card-content">
-                  <div className="blog-meta">
-                    <span className="blog-category">{post.category}</span>
-                    <span className="blog-date">{post.date}</span>
+                <Link to={`/blog/${post.id}`} className="blog-card-link">
+                  <div className="blog-card-content">
+                    <div className="blog-meta">
+                      <span className="blog-category">{post.category}</span>
+                      <span className="blog-date">{post.date}</span>
+                    </div>
+                    <h3>{post.title}</h3>
+                    <p>{post.excerpt}</p>
+                    <span className="read-more">Read Article →</span>
                   </div>
-                  <h3>{post.title}</h3>
-                  <p>{post.excerpt}</p>
-                  <Link to={`/blog/${post.id}`} className="read-more">Read Article →</Link>
-                </div>
+                </Link>
               </article>
             ))}
           </div>

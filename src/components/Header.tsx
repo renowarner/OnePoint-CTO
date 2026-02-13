@@ -29,13 +29,20 @@ const Header = () => {
 
           <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`}>
             <ul>
+              <li><NavLink to="/" onClick={closeMenu}>Home</NavLink></li>
               <li><NavLink to="/about" onClick={closeMenu}>About</NavLink></li>
               <li className="dropdown">
-                <NavLink to="/services" className="dropdown-trigger" onClick={(e) => {
-                  if (window.innerWidth <= 768) {
-                    e.preventDefault();
-                  }
-                }}>Services & Solutions</NavLink>
+                <NavLink 
+                  to="/services" 
+                  className="dropdown-trigger" 
+                  onClick={() => {
+                    if (window.innerWidth <= 768) {
+                      closeMenu();
+                    }
+                  }}
+                >
+                  Services & Solutions
+                </NavLink>
                 <ul className="dropdown-menu">
                   <li><NavLink to="/system-administration" onClick={closeMenu}>Virtual CTO Retainer</NavLink></li>
                   <li><NavLink to="/no-code-system-design" onClick={closeMenu}>AI & Automation Integration</NavLink></li>

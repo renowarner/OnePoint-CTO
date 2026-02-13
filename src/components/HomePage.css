@@ -244,6 +244,10 @@
   .hero-section {
     padding: 100px 20px;
   }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .experience-item ul {
