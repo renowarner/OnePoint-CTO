@@ -34,16 +34,14 @@
 }
 
 .headline-main {
-  font-size: clamp(1.0em, 3.2vw, 1.9em);
+  font-size: clamp(1.8rem, 6vw, 3.2rem);
   font-weight: bold;
-  white-space: nowrap;
 }
 
 .headline-sub {
-  font-size: clamp(0.8em, 2.8vw, 1.4em);
+  font-size: clamp(1.1rem, 4vw, 1.8rem);
   color: var(--accent-cyan);
   font-weight: normal;
-  white-space: nowrap;
 }
 
 .hero-section .hero-tagline {
