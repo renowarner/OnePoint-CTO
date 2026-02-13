@@ -16,22 +16,21 @@
 /* Hero Section */
 .hero-section {
   text-align: center;
-  padding: 140px 0;
-  background-color: var(--bg-navy);
+  padding: 160px 0;
+  background-color: transparent;
 }
 
 .hero-headline {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   color: var(--text-white);
   letter-spacing: 1px;
-  line-height: 1.2;
-  max-width: 1200px;
+  line-height: 1.1;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  overflow: hidden;
+  gap: 15px;
 }
 
 .headline-main {
@@ -92,7 +91,7 @@
 /* Process Section */
 .process-section {
   padding: 100px 0;
-  background-color: var(--bg-navy-light);
+  background-color: transparent;
 }
 
 .process-grid {
@@ -105,7 +104,7 @@
 .process-item {
   text-align: center;
   padding: 40px;
-  background-color: var(--bg-navy);
+  background-color: var(--bg-navy-light);
   border-radius: 12px;
   transition: transform 0.3s ease;
   border: 1px solid var(--bg-navy-lighter);
@@ -135,10 +134,71 @@
   line-height: 1.6;
 }
 
+/* About Preview Section */
+.about-preview-section {
+  padding: 100px 0;
+  background-color: transparent;
+}
+
+.about-preview-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-preview-content p {
+  font-size: 1.2em;
+  color: var(--text-gray);
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.about-preview-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: var(--bg-navy-light);
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid var(--bg-navy-lighter);
+  text-align: center;
+  transition: border-color 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: var(--accent-cyan);
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--accent-cyan);
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  color: var(--text-slate);
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .about-preview-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
 /* Track Record Section */
 .track-record-section {
   padding: 100px 0;
-  background-color: var(--bg-navy);
+  background-color: transparent;
 }
 
 .track-record-intro {
@@ -151,8 +211,10 @@
 
 .experience-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .experience-item {
@@ -231,4 +293,3 @@
   background-color: rgba(0, 210, 255, 0.1);
   transform: translateY(-3px);
 }
-

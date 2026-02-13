@@ -42,6 +42,31 @@ const HomePage = () => {
         </div>
       </section>
 
+      <section id="about-preview" className="about-preview-section">
+        <div className="container">
+          <div className="about-preview-grid">
+            <div className="about-preview-content">
+              <h2 className="section-title" style={{textAlign: 'left', marginLeft: 0}}>One Voice. One Vision.</h2>
+              <p>Managing multiple specialists means separate bills and disconnected systems. At <strong>OnePoint</strong>, I act as your single point of technical leadership.</p>
+              <p>I integrate your automation, AI, and marketing into one cohesive engine—reducing costs and maximizing your baseline income.</p>
+              <div style={{marginTop: '30px'}}>
+                <Link to="/about" className="btn">Learn More About My Approach</Link>
+              </div>
+            </div>
+            <div className="about-preview-stats">
+              <div className="stat-card">
+                <span className="stat-number">10+</span>
+                <span className="stat-label">Years Experience</span>
+              </div>
+              <div className="stat-card">
+                <span className="stat-number">100%</span>
+                <span className="stat-label">System Integration</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="track-record" className="track-record-section">
         <div className="container">
           <h2 className="section-title">Proven Technical Leadership</h2>
@@ -49,8 +74,8 @@ const HomePage = () => {
           <div className="experience-grid">
             <div className="experience-item">
               <h4>Virtual CTO</h4>
-              <p className="experience-org">OnePoint</p>
-              <p className="experience-date">2026 - Current</p>
+              <p className="experience-org">OnePoint CTO</p>
+              <p className="experience-date">2024 - Current</p>
             </div>
             <div className="experience-item">
               <h4>Lead Tech, Automation Engineer, Systems Support</h4>

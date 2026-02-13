@@ -1,6 +1,5 @@
 @import './SystemAdministration.css';
 
-/* Any specific overrides for Chatbots can go here */
 .sidebar-subtitle {
   color: var(--text-gray);
   margin-top: -20px;

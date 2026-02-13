@@ -6,6 +6,7 @@ const AboutPage = () => {
     <div className="about-page-container">
       <section id="about" className="about-section">
         <div className="container">
+          <h2 className="section-title">Technical Strategy, Unified.</h2>
           <div className="about-content">
             <div className="about-image-container">
               <img src={headshot} alt="Reno Warner" className="headshot-img" />

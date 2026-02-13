@@ -1,25 +1,124 @@
-.sys-admin-page-container {
+.vcto-page-container {
   padding: 80px 0;
-  background-color: #121212;
-  color: #ccc;
+  background-color: transparent;
 }
 
-.sys-admin-page-container .container {
+.vcto-hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.vcto-intro {
+  font-size: 1.3em;
+  color: var(--text-gray);
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
-.sys-admin-page-container h2 {
-  font-size: 3em;
-  color: #007bff;
-  margin-bottom: 40px;
-  text-align: center;
+.vcto-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  margin-top: 60px;
 }
 
-.sys-admin-page-container p {
-  font-size: 1.2em;
-  line-height: 1.8;
+.vcto-text h3 {
+  font-size: 2.2em;
+  color: var(--text-white);
   margin-bottom: 25px;
-  text-align: justify;
+}
+
+.vcto-text p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: var(--text-slate);
+  margin-bottom: 40px;
+}
+
+.vcto-pillars {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.pillar h4 {
+  color: var(--accent-cyan);
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pillar p {
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+.sidebar-card {
+  background-color: var(--bg-navy-light);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--accent-cyan);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.sidebar-card h4 {
+  color: var(--text-white);
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.sidebar-card .price {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--text-white);
+  margin-bottom: 30px;
+}
+
+.sidebar-card .price span {
+  font-size: 0.4em;
+  color: var(--text-gray);
+}
+
+.sidebar-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.sidebar-card li {
+  color: var(--text-slate);
+  margin-bottom: 15px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.sidebar-card li::before {
+  content: '✓';
+  color: var(--accent-cyan);
+  position: absolute;
+  left: 0;
+}
+
+.btn-full {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid var(--accent-cyan);
+  padding: 15px;
+  color: var(--accent-cyan);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .vcto-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 }

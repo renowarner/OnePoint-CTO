@@ -10,6 +10,9 @@ import SystemAdministration from './components/SystemAdministration';
 import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
 import ManagedAiChatbotsPage from './components/ManagedAiChatbotsPage';
+import WebPresenceGrowth from './components/WebPresenceGrowth';
+import BlogPage from './components/BlogPage';
+import BlogPost from './components/BlogPost';
 
 function App() {
   const location = useLocation();
@@ -36,6 +39,9 @@ function App() {
         <Route path="/no-code-system-design" element={<NoCodeSystemDesign />} />
         <Route path="/system-administration" element={<SystemAdministration />} />
         <Route path="/managed-ai-chatbots" element={<ManagedAiChatbotsPage />} />
+        <Route path="/web-presence-growth" element={<WebPresenceGrowth />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />

@@ -1,8 +1,8 @@
 /* C:\Users\Devlin\Desktop\Gemini\Active Projects\Website\src\components\AboutPage.css */
 .about-page-container {
   padding: 80px 0; /* Consistent with homepage sections */
-  background-color: #121212; /* Dark background */
-  color: #ccc; /* Light text color */
+  background-color: transparent;
+  color: var(--text-slate);
 }
 
 .about-page-container .about-section {
@@ -17,7 +17,7 @@
 
 .about-page-container h2 {
   font-size: 3em; /* Consistent with homepage h2 */
-  color: #007bff; /* Highlight color for headings */
+  color: var(--text-white);
   margin-bottom: 60px; /* Consistent with homepage h2 */
   text-align: center;
   position: relative; /* For ::after pseudo-element */
@@ -27,7 +27,7 @@
   content: '';
   width: 80px;
   height: 4px;
-  background-color: #007bff;
+  background-color: var(--accent-cyan);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -35,35 +35,38 @@
 }
 
 .about-page-container p {
-  font-size: 1.2em; /* Consistent with homepage p */
-  line-height: 1.8; /* Consistent with homepage p */
-  text-align: justify;
-  margin-bottom: 15px;
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
 .about-content {
   display: flex;
   align-items: flex-start;
   gap: 40px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .about-image-container {
-  flex: 0 0 300px;
+  flex: 0 0 350px;
 }
 
 .headshot-img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 30px rgba(0, 123, 255, 0.2), 0 4px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   display: block;
-  border: 1px solid rgba(0, 123, 255, 0.3);
+  border: 1px solid var(--bg-navy-lighter);
 }
 
 .about-text {
   flex: 1;
+}
+
+.about-text strong {
+  color: var(--text-white);
 }
 
 @media (max-width: 768px) {

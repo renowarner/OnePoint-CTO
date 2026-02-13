@@ -1,19 +1,62 @@
 import './NoCodeSystemDesign.css';
+import { Link } from 'react-router-dom';
 
 const NoCodeSystemDesign = () => {
   return (
-    <div className="no-code-page-container">
-      <section className="no-code-section">
+    <div className="vcto-page-container">
+      <section className="vcto-hero">
         <div className="container">
-          <p>
-            Efficiency shouldn't require a dedicated engineering team. I specialize in designing and implementing robust business systems using powerful "no-code" and "low-code" tools like Zapier, Make.com, and various CRM integrations.
+          <h2 className="section-title">AI & Automation Integration</h2>
+          <p className="vcto-intro">
+            Synchronize your business operations into a single, automated engine. 
+            Connect your tools, eliminate manual data entry, and scale without increasing headcount.
           </p>
-          <p>
-            The advantage of this approach is simplicity and autonomy. I build sophisticated automation and data management systems that your internal team can actually manage and update themselves. This removes the need for expensive technical retainers or constant reliance on outside contractors for every minor change.
-          </p>
-          <p>
-            Whether it's syncing lead data between your website and CRM, automating client onboarding, or creating custom internal dashboards, I provide solutions that are as powerful as they are accessible.
-          </p>
+        </div>
+      </section>
+
+      <section className="vcto-content">
+        <div className="container">
+          <div className="vcto-grid">
+            <div className="vcto-text">
+              <h3>Eliminate Technical Friction</h3>
+              <p>
+                Most businesses suffer from "SaaS Sprawl"—using dozens of tools that don't 
+                talk to each other. I build the <strong>connective tissue</strong> between 
+                your CRM, marketing, and operations platforms to ensure data flows 
+                seamlessly across your organization.
+              </p>
+              
+              <div className="vcto-pillars">
+                <div className="pillar">
+                  <h4>Workflow Automation</h4>
+                  <p>I design and implement custom automations using Zapier, Make.com, and Python to handle repetitive tasks like lead routing, invoicing, and reporting.</p>
+                </div>
+                <div className="pillar">
+                  <h4>AI Content & Operations</h4>
+                  <p>Integrate Large Language Models (LLMs) into your internal workflows to automate content generation, data summarization, and customer sentiment analysis.</p>
+                </div>
+                <div className="pillar">
+                  <h4>Unified System Roadmap</h4>
+                  <p>Instead of a collection of "hacks," you get a documented, professional system architecture that grows with your business.</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="vcto-sidebar">
+              <div className="sidebar-card">
+                <h4>Integration Focus</h4>
+                <p className="sidebar-subtitle">Custom System Design</p>
+                <ul>
+                  <li>API & Webhook Optimization</li>
+                  <li>CRM Synchronization</li>
+                  <li>Automated Lead Capture</li>
+                  <li>Custom Reporting Dashboards</li>
+                  <li>Legacy System Connectivity</li>
+                </ul>
+                <Link to="/contact" className="btn btn-full">Build Your Roadmap</Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
