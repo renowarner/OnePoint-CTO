@@ -1,7 +1,11 @@
+import { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './BlogPage.css';
-import { Link } from 'react-router-dom';
 
 const BlogPage = () => {
+  const navigate = useNavigate();
+  const [highlightedId, setHighlightedId] = useState<number | null>(null);
+
   const blogPosts = [
     {
       id: 3,
@@ -26,6 +30,16 @@ const BlogPage = () => {
     }
   ];
 
+  const handleCardClick = (id: number) => {
+    if (highlightedId === id) {
+      // Second click - navigate
+      navigate(`/blog/${id}`);
+    } else {
+      // First click - highlight
+      setHighlightedId(id);
+    }
+  };
+
   return (
     <div className="blog-page-container">
       <section className="blog-hero">
@@ -42,18 +56,22 @@ const BlogPage = () => {
         <div className="container">
           <div className="blog-grid">
             {blogPosts.map(post => (
-              <article key={post.id} className="blog-card">
-                <Link to={`/blog/${post.id}`} className="blog-card-link">
-                  <div className="blog-card-content">
-                    <div className="blog-meta">
-                      <span className="blog-category">{post.category}</span>
-                      <span className="blog-date">{post.date}</span>
-                    </div>
-                    <h3>{post.title}</h3>
-                    <p>{post.excerpt}</p>
-                    <span className="read-more">Read Article →</span>
+              <article 
+                key={post.id} 
+                className={`blog-card ${highlightedId === post.id ? 'highlighted' : ''}`}
+                onClick={() => handleCardClick(post.id)}
+              >
+                <div className="blog-card-content">
+                  <div className="blog-meta">
+                    <span className="blog-category">{post.category}</span>
+                    <span className="blog-date">{post.date}</span>
                   </div>
-                </Link>
+                  <h3>{post.title}</h3>
+                  <p>{post.excerpt}</p>
+                  <span className="read-more">
+                    {highlightedId === post.id ? 'Click again to read →' : 'Read Article →'}
+                  </span>
+                </div>
               </article>
             ))}
           </div>

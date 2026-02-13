@@ -28,18 +28,17 @@
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
+  cursor: pointer; /* Indicate the card is clickable */
 }
 
-.blog-card-link {
-  text-decoration: none;
-  display: block;
-  height: 100%;
-}
-
-.blog-card:hover {
-  transform: translateY(-5px);
+.blog-card:hover, .blog-card.highlighted {
   border-color: var(--accent-cyan);
+  background-color: rgba(0, 210, 255, 0.05);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.blog-card.highlighted {
+  transform: translateY(-5px);
 }
 
 .blog-card-content {
