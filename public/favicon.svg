@@ -1,22 +1,29 @@
 <svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .primary { fill: #00D2FF; stroke: #00D2FF; }
+    .secondary { fill: #0A192F; stroke: #0A192F; }
+    @media (prefers-color-scheme: dark) {
+      .secondary { fill: #F0F4F8; stroke: #F0F4F8; }
+    }
+  </style>
   <!-- ICON ONLY - NO TEXT -->
-  <circle cx="200" cy="180" r="18" fill="#00D2FF"/>
-  <line x1="200" y1="180" x2="280" y2="100" stroke="#0A192F" stroke-width="4"/>
-  <circle cx="280" cy="100" r="8" fill="#0A192F"/>
-  <line x1="200" y1="180" x2="120" y2="100" stroke="#0A192F" stroke-width="4"/>
-  <circle cx="120" cy="100" r="8" fill="#0A192F"/>
-  <line x1="200" y1="180" x2="280" y2="260" stroke="#0A192F" stroke-width="4"/>
-  <circle cx="280" cy="260" r="8" fill="#0A192F"/>
-  <line x1="200" y1="180" x2="120" y2="260" stroke="#0A192F" stroke-width="4"/>
-  <circle cx="120" cy="260" r="8" fill="#0A192F"/>
-  <line x1="206" y1="163" x2="229" y2="100" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
-  <circle cx="229" cy="100" r="5" fill="#00D2FF"/>
-  <line x1="217" y1="185" x2="285" y2="203" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
-  <circle cx="285" cy="203" r="5" fill="#00D2FF"/>
-  <line x1="194" y1="197" x2="175" y2="248" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
-  <circle cx="175" cy="248" r="5" fill="#00D2FF"/>
-  <line x1="182" y1="185" x2="105" y2="205" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
-  <circle cx="105" cy="205" r="5" fill="#00D2FF"/>
-  <line x1="184" y1="172" x2="150" y2="155" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
-  <circle cx="150" cy="155" r="5" fill="#00D2FF"/>
+  <circle cx="200" cy="180" r="18" class="primary"/>
+  <line x1="200" y1="180" x2="280" y2="100" stroke-width="4" class="secondary"/>
+  <circle cx="280" cy="100" r="8" class="secondary"/>
+  <line x1="200" y1="180" x2="120" y2="100" stroke-width="4" class="secondary"/>
+  <circle cx="120" cy="100" r="8" class="secondary"/>
+  <line x1="200" y1="180" x2="280" y2="260" stroke-width="4" class="secondary"/>
+  <circle cx="280" cy="260" r="8" class="secondary"/>
+  <line x1="200" y1="180" x2="120" y2="260" stroke-width="4" class="secondary"/>
+  <circle cx="120" cy="260" r="8" class="secondary"/>
+  <line x1="206" y1="163" x2="229" y2="100" stroke-width="2" stroke-dasharray="4" class="primary" fill="none"/>
+  <circle cx="229" cy="100" r="5" class="primary"/>
+  <line x1="217" y1="185" x2="285" y2="203" stroke-width="2" stroke-dasharray="4" class="primary" fill="none"/>
+  <circle cx="285" cy="203" r="5" class="primary"/>
+  <line x1="194" y1="197" x2="175" y2="248" stroke-width="2" stroke-dasharray="4" class="primary" fill="none"/>
+  <circle cx="175" cy="248" r="5" class="primary"/>
+  <line x1="182" y1="185" x2="105" y2="205" stroke-width="2" stroke-dasharray="4" class="primary" fill="none"/>
+  <circle cx="105" cy="205" r="5" class="primary"/>
+  <line x1="184" y1="172" x2="150" y2="155" stroke-width="2" stroke-dasharray="4" class="primary" fill="none"/>
+  <circle cx="150" cy="155" r="5" class="primary"/>
 </svg>
