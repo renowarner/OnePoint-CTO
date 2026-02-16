@@ -4,7 +4,7 @@ import './BlogPost.css';
 const blogPostsData = {
   "4": {
     title: "Why I started OnePoint CTO: Bridging the Small Business Tech Gap",
-    date: "September 10, 2025",
+    date: "September 20, 2025",
     category: "Vision",
     content: (
       <>
@@ -27,7 +27,7 @@ const blogPostsData = {
   },
   "5": {
     title: "The Hidden Cost of SaaS Sprawl: Are You Overpaying for Friction?",
-    date: "October 10, 2025",
+    date: "October 19, 2025",
     category: "Cost Optimization",
     content: (
       <>
@@ -49,7 +49,7 @@ const blogPostsData = {
   },
   "6": {
     title: "AI as an Implementation Layer: The New Secret to Business Agility",
-    date: "November 10, 2025",
+    date: "November 17, 2025",
     category: "AI & Automation",
     content: (
       <>
@@ -70,7 +70,7 @@ const blogPostsData = {
   },
   "1": {
     title: "The 'Three Expert' Problem: Why Disconnected Systems Kill Profit",
-    date: "December 10, 2025",
+    date: "December 15, 2025",
     category: "Strategy",
     content: (
       <>
@@ -92,7 +92,7 @@ const blogPostsData = {
   },
   "2": {
     title: "How AI Chatbots Can Qualify Leads While You Sleep",
-    date: "January 15, 2026",
+    date: "January 14, 2026",
     category: "AI & Automation",
     content: (
       <>
