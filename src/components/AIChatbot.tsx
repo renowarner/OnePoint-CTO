@@ -12,27 +12,29 @@ interface Message {
 const AIChatbot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [inputValue, setInputValue] = useState('');
-  const [threadId, setThreadId] = useState<string | null>(null);
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      id: '1',
-      text: "Hi! I'm the OnePoint AI assistant. I can help you understand our Audit process, Virtual CTO services, or help you schedule a consultation. What's on your mind?",
-      sender: 'bot',
-      timestamp: new Date()
-    }
-  ]);
+  const [threadId, setThreadId] = useState<string | null>(localStorage.getItem('onepoint_chat_thread_id'));
+  const [messages, setMessages] = useState<Message[]>(() => {
+    const savedMessages = localStorage.getItem('onepoint_chat_messages');
+    return savedMessages ? JSON.parse(savedMessages) : [
+      {
+        id: '1',
+        text: "Hi! I'm the OnePoint AI. We help businesses optimize their systems and automate growth. What's your name, and what's on your mind today?",
+        sender: 'bot',
+        timestamp: new Date()
+      }
+    ];
+  });
+
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
-
+  // Save messages to localStorage whenever they change
   useEffect(() => {
+    localStorage.setItem('onepoint_chat_messages', JSON.stringify(messages));
     scrollToBottom();
   }, [messages]);
 
-  // Create thread on component mount or when opened
+  // Create thread if one doesn't exist in localStorage
   useEffect(() => {
     if (isOpen && !threadId) {
       const createThread = async () => {
@@ -44,6 +46,7 @@ const AIChatbot: React.FC = () => {
           const data = await response.json();
           if (data.threadId) {
             setThreadId(data.threadId);
+            localStorage.setItem('onepoint_chat_thread_id', data.threadId);
           }
         } catch (error) {
           console.error('Error creating thread:', error);
