@@ -13,6 +13,7 @@ import ManagedAiChatbotsPage from './components/ManagedAiChatbotsPage';
 import WebPresenceGrowth from './components/WebPresenceGrowth';
 import BlogPage from './components/BlogPage';
 import BlogPost from './components/BlogPost';
+import AIChatbot from './components/AIChatbot';
 
 function App() {
   const location = useLocation();
@@ -45,6 +46,7 @@ function App() {
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
+      <AIChatbot />
     </>
   );
 }
