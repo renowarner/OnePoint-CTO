@@ -1,0 +1,39 @@
+<svg width="1584" height="396" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0A192F"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Background Graphic (Moved further right to avoid profile pic) -->
+  <g transform="translate(1000, 50) scale(1.2)" opacity="0.1">
+    <circle cx="200" cy="180" r="18" fill="#00D2FF"/>
+    <line x1="200" y1="180" x2="280" y2="100" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="280" cy="100" r="8" fill="#FFFFFF"/>
+    <line x1="200" y1="180" x2="120" y2="100" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="120" cy="100" r="8" fill="#FFFFFF"/>
+    <line x1="200" y1="180" x2="280" y2="260" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="280" cy="260" r="8" fill="#FFFFFF"/>
+    <line x1="200" y1="180" x2="120" y2="260" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="120" cy="260" r="8" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Main Text Content (Centered horizontally and vertically in the 'Safe Zone') -->
+  <!-- LinkedIn safe zone is roughly the middle 1000px, avoiding the bottom-left corner -->
+  <g transform="translate(792, 198)" text-anchor="middle">
+    <text y="-30" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#FFFFFF" letter-spacing="4">ONEPOINT</text>
+    <text y="20" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#00D2FF">STRATEGIC V-CTO SERVICES</text>
+    
+    <rect x="-300" y="45" width="600" height="2" fill="#00D2FF" fill-opacity="0.5"/>
+    
+    <text y="85" font-family="Arial, sans-serif" font-size="24" font-weight="normal" fill="#FFFFFF" fill-opacity="0.9">Integration • AI Automation • Technical Strategy</text>
+  </g>
+
+  <!-- Visual Accent on the right edge -->
+  <rect x="1564" y="0" width="20" height="396" fill="#00D2FF" fill-opacity="0.2"/>
+</svg>

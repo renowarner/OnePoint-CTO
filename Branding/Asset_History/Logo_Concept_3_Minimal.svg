@@ -1,0 +1,6 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#1A1A1A"/>
+  <text x="200" y="200" font-family="Impact, sans-serif" font-size="45" text-anchor="middle" fill="#FFFFFF">ONEPOINT<tspan fill="#50C878">.</tspan></text>
+  <rect x="100" y="220" width="200" height="2" fill="#50C878"/>
+  <text x="200" y="260" font-family="Courier New, monospace" font-size="20" text-anchor="middle" fill="#50C878">STRATEGIC V-CTO</text>
+</svg>

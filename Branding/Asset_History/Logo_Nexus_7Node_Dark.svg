@@ -1,0 +1,37 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#0A192F"/>
+  <!-- Central Hub -->
+  <circle cx="200" cy="180" r="15" fill="#00D2FF"/>
+  
+  <!-- 7 Nodes with Varying Lengths -->
+  <!-- N1 -->
+  <line x1="200" y1="180" x2="310" y2="110" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.6"/>
+  <circle cx="310" cy="110" r="6" fill="#FFFFFF"/>
+  
+  <!-- N2 -->
+  <line x1="200" y1="180" x2="110" y2="80" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.6"/>
+  <circle cx="110" cy="80" r="6" fill="#FFFFFF"/>
+  
+  <!-- N3 -->
+  <line x1="200" y1="180" x2="290" y2="260" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.6"/>
+  <circle cx="290" cy="260" r="6" fill="#FFFFFF"/>
+  
+  <!-- N4 -->
+  <line x1="200" y1="180" x2="90" y2="240" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.6"/>
+  <circle cx="90" cy="240" r="6" fill="#FFFFFF"/>
+  
+  <!-- N5 -->
+  <line x1="200" y1="180" x2="200" y2="50" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.6"/>
+  <circle cx="200" cy="50" r="6" fill="#FFFFFF"/>
+  
+  <!-- N6 -->
+  <line x1="200" y1="180" x2="330" y2="210" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.6"/>
+  <circle cx="330" cy="210" r="6" fill="#FFFFFF"/>
+  
+  <!-- N7 -->
+  <line x1="200" y1="180" x2="70" y2="150" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.6"/>
+  <circle cx="70" cy="150" r="6" fill="#FFFFFF"/>
+
+  <text x="200" y="340" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#FFFFFF">ONEPOINT</text>
+  <text x="200" y="370" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#00D2FF">STRATEGIC V-CTO</text>
+</svg>

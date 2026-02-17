@@ -1,0 +1,45 @@
+<svg width="1584" height="396" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#0A192F"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.05"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grid)" />
+
+  <!-- Faded Nexus Icon on the Left -->
+  <g transform="translate(100, 50) scale(1.5)" opacity="0.15">
+    <circle cx="200" cy="180" r="18" fill="#00D2FF"/>
+    <!-- Anchors -->
+    <line x1="200" y1="180" x2="280" y2="100" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="280" cy="100" r="8" fill="#FFFFFF"/>
+    <line x1="200" y1="180" x2="120" y2="100" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="120" cy="100" r="8" fill="#FFFFFF"/>
+    <line x1="200" y1="180" x2="280" y2="260" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="280" cy="260" r="8" fill="#FFFFFF"/>
+    <line x1="200" y1="180" x2="120" y2="260" stroke="#FFFFFF" stroke-width="4"/>
+    <circle cx="120" cy="260" r="8" fill="#FFFFFF"/>
+    <!-- Varied Nodes with End Circles -->
+    <line x1="206" y1="163" x2="229" y2="100" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
+    <circle cx="229" cy="100" r="5" fill="#00D2FF"/>
+    <line x1="217" y1="185" x2="285" y2="203" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
+    <circle cx="285" cy="203" r="5" fill="#00D2FF"/>
+    <line x1="194" y1="197" x2="175" y2="248" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
+    <circle cx="175" cy="248" r="5" fill="#00D2FF"/>
+    <line x1="182" y1="185" x2="105" y2="205" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
+    <circle cx="105" cy="205" r="5" fill="#00D2FF"/>
+    <line x1="184" y1="172" x2="150" y2="155" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
+    <circle cx="150" cy="155" r="5" fill="#00D2FF"/>
+  </g>
+
+  <!-- Main Text Content -->
+  <text x="600" y="180" font-family="Arial, sans-serif" font-size="64" font-weight="bold" fill="#FFFFFF">ONEPOINT</text>
+  <text x="600" y="240" font-family="Arial, sans-serif" font-size="32" fill="#00D2FF">STRATEGIC V-CTO SERVICES</text>
+  
+  <rect x="600" y="270" width="600" height="2" fill="#00D2FF" fill-opacity="0.3"/>
+  
+  <text x="600" y="310" font-family="Arial, sans-serif" font-size="22" fill="#FFFFFF" fill-opacity="0.8">Systems Integration  •  AI Implementation  •  Marketing Architecture</text>
+</svg>

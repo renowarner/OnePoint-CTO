@@ -1,0 +1,42 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+  <!-- Central Hub -->
+  <circle cx="200" cy="180" r="18" fill="#00D2FF"/>
+  
+  <!-- 4 Static Anchor Nodes (Foundation) -->
+  <line x1="200" y1="180" x2="280" y2="100" stroke="#0A192F" stroke-width="4"/>
+  <circle cx="280" cy="100" r="8" fill="#0A192F"/>
+  
+  <line x1="200" y1="180" x2="120" y2="100" stroke="#0A192F" stroke-width="4"/>
+  <circle cx="120" cy="100" r="8" fill="#0A192F"/>
+  
+  <line x1="200" y1="180" x2="280" y2="260" stroke="#0A192F" stroke-width="4"/>
+  <circle cx="280" cy="260" r="8" fill="#0A192F"/>
+  
+  <line x1="200" y1="180" x2="120" y2="260" stroke="#0A192F" stroke-width="4"/>
+  <circle cx="120" cy="260" r="8" fill="#0A192F"/>
+  
+  <!-- 5 Asymmetrical Nodes forming a vague "Star" shape -->
+  <!-- Top Point (The Strategy) -->
+  <line x1="200" y1="162" x2="200" y2="70" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
+  <circle cx="200" cy="70" r="5" fill="#00D2FF"/>
+  
+  <!-- Far Right Point (The Outreach) -->
+  <line x1="218" y1="180" x2="330" y2="160" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
+  <circle cx="330" cy="160" r="5" fill="#00D2FF"/>
+  
+  <!-- Lower Right Point (The Results) -->
+  <line x1="212" y1="192" x2="260" y2="290" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
+  <circle cx="260" cy="290" r="5" fill="#00D2FF"/>
+
+  <!-- Lower Left Point (The Foundation) -->
+  <line x1="188" y1="192" x2="140" y2="290" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
+  <circle cx="140" cy="290" r="5" fill="#00D2FF"/>
+
+  <!-- Far Left Point (The Integration) -->
+  <line x1="182" y1="180" x2="70" y2="160" stroke="#00D2FF" stroke-width="2" stroke-dasharray="4"/>
+  <circle cx="70" cy="160" r="5" fill="#00D2FF"/>
+
+  <text x="200" y="340" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="#0A192F">ONEPOINT</text>
+  <text x="200" y="370" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="#00D2FF">STRATEGIC V-CTO</text>
+</svg>
