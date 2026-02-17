@@ -5,16 +5,35 @@ import { Link } from 'react-router-dom';
 const ContactPage = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = () => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
     setIsSubmitting(true);
-    // The browser handles the actual POST to Formspree.
-    // We just set a timeout to re-enable the button after 60 seconds 
-    // to prevent rapid-fire spamming from the UI.
-    setTimeout(() => {
+    setError(null);
+
+    const formData = new FormData(e.currentTarget);
+    
+    try {
+      const response = await fetch('https://formspree.io/f/mbdaypwz', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        const data = await response.json();
+        setError(data.error || 'Oops! There was a problem submitting your form');
+      }
+    } catch (err) {
+      setError('Oops! There was a problem submitting your form');
+    } finally {
       setIsSubmitting(false);
-    }, 60000); 
-    setSubmitted(true);
+    }
   };
 
   return (
@@ -33,14 +52,9 @@ const ContactPage = () => {
             </div>
           ) : (
             <form 
-              action="https://formspree.io/f/mbdaypwz" 
-              method="POST" 
-              className="contact-form"
               onSubmit={handleSubmit}
+              className="contact-form"
             >
-              {/* Honeypot field to catch bots */}
-              <input type="text" name="_gotcha" style={{ display: 'none' }} />
-
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input type="text" id="name" name="name" required placeholder="Your Name" />
@@ -50,9 +64,12 @@ const ContactPage = () => {
                 <input type="email" id="email" name="email" required placeholder="Your Email" />
               </div>
               <div className="form-group">
-                <label htmlFor="note">Note</label>
-                <textarea id="note" name="note" required placeholder="Your Message" rows={5}></textarea>
+                <label htmlFor="message">Note</label>
+                <textarea id="message" name="message" required placeholder="Your Message" rows={5}></textarea>
               </div>
+              
+              {error && <p className="text-red-500 mb-4">{error}</p>}
+
               <button 
                 type="submit" 
                 className="btn btn-primary" 
