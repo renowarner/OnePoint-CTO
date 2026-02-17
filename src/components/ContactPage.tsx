@@ -33,7 +33,7 @@ const ContactPage = () => {
             </div>
           ) : (
             <form 
-              action="https://formspree.io/f/reno@onepointcto.com" 
+              action="https://formspree.io/f/mbdaypwz" 
               method="POST" 
               className="contact-form"
               onSubmit={handleSubmit}
