@@ -79,14 +79,28 @@ const AIChatbot: React.FC = () => {
       
       const data = await response.json();
       
-      const botMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        text: data.response || "I'm having trouble connecting to the system. Please try again or email reno@onepointcto.com directly.",
-        sender: 'bot',
-        timestamp: new Date()
-      };
-
-      setMessages(prev => [...prev, botMessage]);
+      if (data.response) {
+        // Split response by double or triple newlines to simulate separate messages
+        const parts = data.response.split(/\n{2,}/).filter((p: string) => p.trim() !== '');
+        
+        for (let i = 0; i < parts.length; i++) {
+          if (i > 0) {
+            setIsTyping(true);
+            await new Promise(resolve => setTimeout(resolve, 1000 + (parts[i].length * 10))); // Simulate typing
+            setIsTyping(false);
+          }
+          
+          const botMessage: Message = {
+            id: (Date.now() + i).toString(),
+            text: parts[i],
+            sender: 'bot',
+            timestamp: new Date()
+          };
+          setMessages(prev => [...prev, botMessage]);
+        }
+      } else {
+        throw new Error("No response from assistant");
+      }
     } catch (error) {
       console.error('Error sending message:', error);
       const errorMessage: Message = {
