@@ -35,6 +35,10 @@ const AIChatbot: React.FC = () => {
   const [isTyping, setIsTyping] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   // Save messages to localStorage whenever they change
   useEffect(() => {
     localStorage.setItem('onepoint_chat_messages', JSON.stringify(messages));
