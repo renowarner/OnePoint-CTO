@@ -12,6 +12,7 @@ interface Message {
 const AIChatbot: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [inputValue, setInputValue] = useState('');
+  const [threadId, setThreadId] = useState<string | null>(null);
   const [messages, setMessages] = useState<Message[]>([
     {
       id: '1',
@@ -31,6 +32,27 @@ const AIChatbot: React.FC = () => {
     scrollToBottom();
   }, [messages]);
 
+  // Create thread on component mount or when opened
+  useEffect(() => {
+    if (isOpen && !threadId) {
+      const createThread = async () => {
+        try {
+          const response = await fetch('/api/chat/thread', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+          });
+          const data = await response.json();
+          if (data.threadId) {
+            setThreadId(data.threadId);
+          }
+        } catch (error) {
+          console.error('Error creating thread:', error);
+        }
+      };
+      createThread();
+    }
+  }, [isOpen, threadId]);
+
   const handleSend = async () => {
     if (!inputValue.trim()) return;
 
@@ -45,31 +67,38 @@ const AIChatbot: React.FC = () => {
     setInputValue('');
     setIsTyping(true);
 
-    // V-CTO Brain Logic (Simplified Prototype)
-    setTimeout(() => {
-      let botResponse = "I'm not sure about that, but I'd love to discuss it in a consultation! You can book one at onepointcto.com/schedule-consultation.";
-      const input = userMessage.text.toLowerCase();
-
-      if (input.includes('audit')) {
-        botResponse = "Our Technical & Operational Audit is a full-stack review priced at $750. We look for SaaS waste, workflow friction, and AI opportunities. Would you like to start one?";
-      } else if (input.includes('price') || input.includes('cost')) {
-        botResponse = "We offer the OnePoint Audit for $750, and our Foundation setup starts at $750 with a $250/mo management fee. For larger scale needs, our Virtual CTO partnership is custom quoted.";
-      } else if (input.includes('virtual cto') || input.includes('v-cto')) {
-        botResponse = "As a Virtual CTO, I provide high-level technical strategy, vendor management, and system oversight without the full-time executive cost. It's built for scale.";
-      } else if (input.includes('contact') || input.includes('help') || input.includes('email')) {
-        botResponse = "The best way to get in touch is to leave your email here, or visit our contact page. I can also help you book a meeting directly!";
-      }
-
+    try {
+      const response = await fetch('/api/chat/message', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          threadId: threadId || (await (await fetch('/api/chat/thread', { method: 'POST' })).json()).threadId,
+          message: userMessage.text 
+        }),
+      });
+      
+      const data = await response.json();
+      
       const botMessage: Message = {
         id: (Date.now() + 1).toString(),
-        text: botResponse,
+        text: data.response || "I'm having trouble connecting to the system. Please try again or email reno@onepointcto.com directly.",
         sender: 'bot',
         timestamp: new Date()
       };
 
       setMessages(prev => [...prev, botMessage]);
+    } catch (error) {
+      console.error('Error sending message:', error);
+      const errorMessage: Message = {
+        id: (Date.now() + 1).toString(),
+        text: "I'm having trouble connecting to the system. Please try again or email reno@onepointcto.com directly.",
+        sender: 'bot',
+        timestamp: new Date()
+      };
+      setMessages(prev => [...prev, errorMessage]);
+    } finally {
       setIsTyping(false);
-    }, 1000);
+    }
   };
 
   return (
