@@ -47,6 +47,7 @@ const AIChatbot: React.FC = () => {
 
   // Create thread if one doesn't exist in localStorage
   useEffect(() => {
+    let isMounted = true;
     if (isOpen && !threadId) {
       const createThread = async () => {
         try {
@@ -54,8 +55,9 @@ const AIChatbot: React.FC = () => {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
           });
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
           const data = await response.json();
-          if (data.threadId) {
+          if (isMounted && data.threadId) {
             setThreadId(data.threadId);
             localStorage.setItem('onepoint_chat_thread_id', data.threadId);
           }
@@ -65,6 +67,7 @@ const AIChatbot: React.FC = () => {
       };
       createThread();
     }
+    return () => { isMounted = false };
   }, [isOpen, threadId]);
 
   const handleSend = async () => {
