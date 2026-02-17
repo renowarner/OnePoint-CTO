@@ -20,23 +20,24 @@ const ServicesPage = () => {
           {/* Featured Top Card: The Audit */}
           <div className="featured-audit-container">
             <div className="service-tier-card featured audit-card">
-              <div className="tier-tag">Step One</div>
+              <div className="tier-tag">The First Step</div>
               <div className="card-header-main">
-                <h3>The OnePoint Audit</h3>
-                <p className="tier-price">$500 <span>/ Standard</span></p>
+                <h3>Technical & Operational Audit</h3>
+                <p className="tier-price">$750 <span>/ Full Engagement</span></p>
               </div>
               <p className="tier-description">
-                A comprehensive deep-dive into your technical stack to identify waste and 
-                fragmentation. This is the foundation of our strategic partnership.
+                A high-impact evaluation of your entire technical landscape. We uncover hidden costs, 
+                identify manual friction points, and build the blueprint for your digital transformation. 
+                This exhaustive review ensures every dollar spent on technology is driving your business forward.
               </p>
               <div className="card-footer-main">
                 <ul className="tier-features">
-                  <li>SaaS & Expense Analysis</li>
-                  <li>Process Friction Mapping</li>
-                  <li>Automation Opportunity Report</li>
-                  <li>Custom 90-Day Roadmap</li>
+                  <li><strong>SaaS Scrub:</strong> Identification and removal of redundant or underutilized subscriptions.</li>
+                  <li><strong>Process Friction Mapping:</strong> Locating manual data entry and workflow bottlenecks.</li>
+                  <li><strong>AI Opportunity Report:</strong> Specific use-cases where Large Language Models can offload work.</li>
+                  <li><strong>Strategic 90-Day Roadmap:</strong> A prioritized execution plan for immediate efficiency gains.</li>
                 </ul>
-                <Link to="/contact" className="btn btn-tier">Book Your Audit</Link>
+                <Link to="/schedule-consultation" className="btn btn-tier">Start Your Audit</Link>
               </div>
             </div>
           </div>
@@ -45,56 +46,56 @@ const ServicesPage = () => {
             
             {/* V-CTO Retainer */}
             <div className="service-tier-card">
-              <div className="tier-tag">Ongoing</div>
-              <h3>Virtual CTO Retainer</h3>
-              <p className="tier-price">Monthly <span>Leadership</span></p>
+              <div className="tier-tag">Continuous</div>
+              <h3>Virtual CTO</h3>
+              <p className="tier-price">Monthly <span>Partnership</span></p>
               <p className="tier-description">
-                Strategic technical leadership for businesses that need a CTO without the 
-                full-time salary.
+                Ongoing strategic direction for businesses ready to scale. We act as your primary technical 
+                officer, handling high-level decisions and systems management without the overhead of a full-time executive.
               </p>
               <ul className="tier-features">
-                <li>Ongoing Systems Management</li>
-                <li>Strategic Technical Oversight</li>
-                <li>Security & Data Architecture</li>
-                <li>Vendor & Tech Debt Control</li>
+                <li>Active Systems Management & Stability</li>
+                <li>Strategic Architectural Guidance</li>
+                <li>Cybersecurity & Data Governance</li>
+                <li>Vendor Management & Technical Debt Control</li>
               </ul>
-              <Link to="/system-administration" className="btn btn-tier">View Service Details</Link>
+              <Link to="/system-administration" className="btn btn-tier">Learn More About V-CTO</Link>
             </div>
 
             {/* Integration & Growth */}
             <div className="service-tier-card">
-              <div className="tier-tag">Specialized</div>
-              <h3>AI & Growth Integration</h3>
-              <p className="tier-price">Custom <span>Solutions</span></p>
+              <div className="tier-tag">Implementation</div>
+              <h3>AI & Operational Automation</h3>
+              <p className="tier-price">Project <span>Execution</span></p>
               <p className="tier-description">
-                Implementation-focused projects to turn your tech stack into a lead-generating 
-                engine.
+                Direct deployment of intelligent systems. We build the "Implementation Layer" that turns 
+                your technical goals into automated realities, reducing labor hours and increasing lead conversion.
               </p>
               <ul className="tier-features">
-                <li>AI Chatbot Deployment</li>
-                <li>Lead Capture Automation</li>
-                <li>No-Code System Design</li>
-                <li>Custom Logic Workflows</li>
+                <li>Custom AI Chatbot Architecture</li>
+                <li>Automated Lead Capture & Routing</li>
+                <li>No-Code Workflow Engineering</li>
+                <li>Legacy System Interconnectivity</li>
               </ul>
-              <Link to="/no-code-system-design" className="btn btn-tier">Explore Solutions</Link>
+              <Link to="/no-code-system-design" className="btn btn-tier">See Implementation Examples</Link>
             </div>
 
             {/* Web Presence & Growth */}
             <div className="service-tier-card">
-              <div className="tier-tag">Marketing Tech</div>
-              <h3>Web Presence & Growth</h3>
-              <p className="tier-price">Digital <span>Presence</span></p>
+              <div className="tier-tag">Visibility</div>
+              <h3>Digital Foundation & SEO</h3>
+              <p className="tier-price">Market <span>Growth</span></p>
               <p className="tier-description">
-                Dominant digital footprint management focusing on structural SEO and 
-                lead nurturing.
+                Structural dominance in your digital market. We focus on the "invisible" technical SEO and 
+                indexing that ensures your business is found by the right people at the right time.
               </p>
               <ul className="tier-features">
-                <li>Strategic Site Design</li>
-                <li>Structural SEO & Content</li>
-                <li>Email Lead Nurturing</li>
-                <li>Performance Analytics</li>
+                <li>SEO-First Site Architecture</li>
+                <li>Search Engine Indexing & Connectivity</li>
+                <li>Automated Lead Nurturing Loops</li>
+                <li>Conversion & Performance Analytics</li>
               </ul>
-              <Link to="/web-presence-growth" className="btn btn-tier">View Growth Package</Link>
+              <Link to="/web-presence-growth" className="btn btn-tier">Review Visibility Growth</Link>
             </div>
 
           </div>

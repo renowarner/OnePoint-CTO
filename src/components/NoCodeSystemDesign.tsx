@@ -6,10 +6,10 @@ const NoCodeSystemDesign = () => {
     <div className="vcto-page-container">
       <section className="vcto-hero">
         <div className="container">
-          <h2 className="section-title">AI & Automation Integration</h2>
+          <h2 className="section-title">AI & Operational Automation</h2>
           <p className="vcto-intro">
-            Synchronize your business operations into a single, automated engine. 
-            Connect your tools, eliminate manual data entry, and scale without increasing headcount.
+            Turning disparate tools into a unified, intelligent business engine. 
+            Automate the repetitive, scale your operations, and let your team focus on high-value work.
           </p>
         </div>
       </section>
@@ -18,42 +18,56 @@ const NoCodeSystemDesign = () => {
         <div className="container">
           <div className="vcto-grid">
             <div className="vcto-text">
-              <h3>Eliminate Technical Friction</h3>
+              <h3>Bridges, Not Just Tools</h3>
               <p>
-                Most businesses suffer from "SaaS Sprawl"—using dozens of tools that don't 
-                talk to each other. I build the <strong>connective tissue</strong> between 
-                your CRM, marketing, and operations platforms to ensure data flows 
-                seamlessly across your organization.
+                Most modern businesses are drowning in "SaaS Sprawl"—using an average of 20-50 different 
+                software platforms that don't effectively talk to each other. This results in manual data 
+                entry, missed leads, and massive operational friction. 
+              </p>
+              <p>
+                I specialize in building the <strong>connective tissue</strong> between your systems. By leveraging 
+                AI and modern automation frameworks, I transform your technology from a collection of 
+                isolated apps into a synchronized implementation layer that works while you sleep.
               </p>
               
               <div className="vcto-pillars">
                 <div className="pillar">
-                  <h4>Workflow Automation</h4>
-                  <p>I design and implement custom automations using Zapier, Make.com, and Python to handle repetitive tasks like lead routing, invoicing, and reporting.</p>
+                  <h4>Intelligent Workflow Engineering</h4>
+                  <p>I design custom automations using tools like Zapier, Make.com, and Python to handle complex logic. From lead routing and automated follow-ups to instant document generation, we remove the "human-as-a-bridge" bottleneck.</p>
                 </div>
                 <div className="pillar">
-                  <h4>AI Content & Operations</h4>
-                  <p>Integrate Large Language Models (LLMs) into your internal workflows to automate content generation, data summarization, and customer sentiment analysis.</p>
+                  <h4>AI Model Integration</h4>
+                  <p>Go beyond basic chatbots. I integrate Large Language Models (LLMs) directly into your internal workflows to automate content summarization, customer sentiment analysis, and intelligent data extraction from emails and files.</p>
                 </div>
                 <div className="pillar">
-                  <h4>Unified System Roadmap</h4>
-                  <p>Instead of a collection of "hacks," you get a documented, professional system architecture that grows with your business.</p>
+                  <h4>The Automated Architecture</h4>
+                  <p>Instead of a series of fragile "hacks," you receive a professional, documented system architecture. We build systems that are designed to be maintainable, observable, and ready for future growth.</p>
                 </div>
+              </div>
+
+              <div className="vcto-deep-dive mt-8">
+                <h3>Scalability Without Headcount</h3>
+                <p>
+                  The true goal of automation is to allow your business to handle double the workload 
+                  without doubling your staff. By automating the high-volume, low-context tasks, 
+                  your human experts can focus on the relationships and decisions that actually 
+                  drive your revenue.
+                </p>
               </div>
             </div>
 
             <div className="vcto-sidebar">
               <div className="sidebar-card">
-                <h4>Integration Focus</h4>
-                <p className="sidebar-subtitle">Custom System Design</p>
+                <h4>Project Implementation</h4>
+                <p className="sidebar-subtitle">Execution Focused</p>
                 <ul>
-                  <li>API & Webhook Optimization</li>
-                  <li>CRM Synchronization</li>
-                  <li>Automated Lead Capture</li>
-                  <li>Custom Reporting Dashboards</li>
-                  <li>Legacy System Connectivity</li>
+                  <li>Custom API & Webhook Design</li>
+                  <li>CRM & Marketing Sync</li>
+                  <li>Intelligent Lead Capture</li>
+                  <li>Automated Financial Reporting</li>
+                  <li>AI Assistant Deployment</li>
                 </ul>
-                <Link to="/contact" className="btn btn-full">Build Your Roadmap</Link>
+                <Link to="/schedule-consultation" className="btn btn-full">See What's Possible</Link>
               </div>
             </div>
           </div>
