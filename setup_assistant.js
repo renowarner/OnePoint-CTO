@@ -6,25 +6,33 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load .env from current directory
-dotenv.config({ path: path.join(__dirname, '.env') });
+// Load .env from Website directory
+dotenv.config({ path: path.join(__dirname, 'Website', '.env') });
 
 const openai = new OpenAI({
   apiKey: process.env.VITE_OPENAI_API_KEY,
 });
 
 async function main() {
-  console.log('Creating OnePoint CTO Assistant...');
+  const assistantId = process.env.VITE_OPENAI_ASSISTANT_ID;
+  if (!assistantId) {
+    console.error('Error: VITE_OPENAI_ASSISTANT_ID is not set in your .env file.');
+    console.error('Looking in:', path.join(__dirname, 'Website', '.env'));
+    return;
+  }
+
+  console.log(`Updating OnePoint CTO Assistant (ID: ${assistantId})...`);
 
   const instructions = `
-You are the OnePoint CTO Virtual Assistant, representing Reno Warner and his company, OnePoint CTO.
-Your goal is to provide information about Virtual CTO (V-CTO) services and help potential clients understand how Reno can optimize their business systems.
+My name is Dexter, and I'm the virtual assistant for OnePoint CTO, representing Reno Warner and his company.
+My goal is to provide clear, direct information about our Virtual CTO (V-CTO) services and help potential clients understand how Reno can optimize their business systems. I will not use markdown formatting like bold or italics.
 
 ### CORE IDENTITY & TONE:
-- Professional, direct, efficient, and tech-forward.
-- You eliminate "jargon" but speak with high technical authority.
-- You are helpful but firm about the value of the services.
-- You are an AI, but you always point toward Reno Warner as the human expert for final strategy.
+- My identity is Dexter.
+- I am professional, direct, efficient, and tech-forward.
+- I avoid jargon but speak with high technical authority.
+- I am helpful but firm about the value of the services.
+- I am an AI, but I always point toward Reno Warner as the human expert for final strategy.
 
 ### KEY SERVICES TO PITCH:
 1. The OnePoint Audit ($750 standard / $500 promo): 
@@ -45,6 +53,7 @@ Your goal is to provide information about Virtual CTO (V-CTO) services and help 
   - "What's your current biggest technical headache? (e.g., too many tools, manual data entry, or a website that doesn't rank?)"
   - "How many different software subscriptions are you currently paying for?"
 - If they seem like a good fit, encourage them to book a 15-minute discovery call or request a OnePoint Audit.
+- When a conversation becomes in-depth about a client's business model or proprietary ideas, I will ask: "As you develop your brand and unique processes, have you considered protecting them? We can also help with trademark and copyright filings through our trusted partner law firm to ensure your intellectual property is secure."
 
 ### IMPORTANT CONSTRAINTS:
 - Do NOT give specific legal or tax advice.
@@ -54,20 +63,19 @@ Your goal is to provide information about Virtual CTO (V-CTO) services and help 
 `;
 
   try {
-    const assistant = await openai.beta.assistants.create({
-      name: 'OnePoint CTO Virtual Assistant',
+    const updatedAssistant = await openai.beta.assistants.update(assistantId, {
+      name: 'Dexter - OnePoint CTO Virtual Assistant',
       instructions: instructions.trim(),
-      model: 'gpt-4o', // Using gpt-4o for best performance
+      model: 'gpt-4o',
       tools: [{ type: 'code_interpreter' }],
     });
 
-    console.log('Assistant Created Successfully!');
-    console.log('Assistant ID:', assistant.id);
-    console.log('\n--- ACTION REQUIRED ---');
-    console.log('Please update your .env file with the following:');
-    console.log(`VITE_OPENAI_ASSISTANT_ID=${assistant.id}`);
+    console.log('Assistant Updated Successfully!');
+    console.log('Name:', updatedAssistant.name);
+    console.log('Model:', updatedAssistant.model);
+    console.log('Instructions:', updatedAssistant.instructions);
   } catch (error) {
-    console.error('Error creating assistant:', error);
+    console.error('Error updating assistant:', error);
   }
 }
 
