@@ -129,6 +129,7 @@ const AIChatbot: React.FC = () => {
       {isOpen && (
         <div className="chat-window">
           <div className="chat-header">
+            {/* Header with updated name: OnePoint AI */}
             <div className="chat-header-title">
               <Bot size={20} />
               <h3>OnePoint AI</h3>
