@@ -22,6 +22,53 @@
   margin-bottom: 80px;
 }
 
+/* Featured Blog Card Styling */
+.featured-blog-card {
+  grid-column: 1 / -1; /* Span all columns */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-navy-light); /* Match other cards */
+  border: 1px solid var(--accent-cyan); /* Highlight border */
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 40px; /* Space between featured and grid */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Enhanced shadow */
+}
+
+.featured-blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 210, 255, 0.15);
+}
+
+.featured-blog-card .blog-card-content {
+  padding: 40px;
+}
+
+.featured-blog-card h3 {
+  font-size: 2.2em; /* Larger title */
+  margin-bottom: 20px;
+  color: var(--text-white);
+}
+
+.featured-blog-card p {
+  font-size: 1.1em; /* Larger excerpt */
+  margin-bottom: 30px;
+  color: var(--text-slate);
+  max-width: 800px;
+}
+
+/* Responsive adjustments for featured card */
+@media (max-width: 768px) {
+  .featured-blog-card h3 {
+    font-size: 1.8em;
+  }
+  .featured-blog-card p {
+    font-size: 1em;
+  }
+}
+
 .blog-card {
   background-color: var(--bg-navy-light);
   border: 1px solid var(--bg-navy-lighter);

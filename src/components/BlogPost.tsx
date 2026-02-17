@@ -2,75 +2,77 @@ import { useParams, Link } from 'react-router-dom';
 import './BlogPost.css';
 
 const blogPostsData = {
-  "4": {
-    title: "Why I started OnePoint CTO: Bridging the Small Business Tech Gap",
-    date: "September 20, 2025",
-    category: "Vision",
+  "7": {
+    title: "The Invisible Hemorrhage: Why 'Set It and Forget It' IT Costs More Than You Think",
+    date: "February 20, 2026",
+    category: "Risk Management",
     content: (
       <>
-        <p>After more than a decade of building technical foundations for high-growth companies and industry leaders, I noticed a recurring, painful pattern. Small and mid-sized businesses were consistently being left behind in the "technical arms race."</p>
-        <p>While enterprise-level companies had dedicated CTOs and engineering teams to navigate the complexities of AI, automation, and systems integration, small businesses were left to manage a patchwork of disconnected freelancers. The result? Fragmented systems, massive software waste, and a ceiling on growth that felt impossible to break.</p>
-        
-        <h4>The "Siloed Expert" Trap</h4>
-        <p>Most business owners think the solution to growth is hiring more specialists. You hire a web designer for the site, a marketing agency for the ads, and an IT guy for the hardware. But because these experts rarely speak the same language or share a unified roadmap, they create "technical silos."</p>
-        <p>Your data is trapped in separate islands, your leads leak through the gaps between systems, and you end up spending more time managing your vendors than growing your business. I founded <strong>OnePoint CTO</strong> to provide a singular alternative.</p>
+        <p>There is a dangerous mindset pervasive in small business culture: "If it ain't broke, don't fix it."</p>
+        <p>In sales and marketing, the ROI is visible. You spend $1,000 on ads, you see the leads come in. You hire a salesperson, you see the contracts signed. But technical management? That often feels like a black hole. Business owners resist spending money on system maintenance because they don't see a direct line to revenue. They view IT as a cost center, something to be minimized, cut, and ignored until a server crashes or a website goes offline.</p>
+        <p>This "break-fix" mentality is a silent revenue killer. By the time a technical problem becomes visible enough to demand your attention, it has likely already cost you thousands of dollars in lost efficiency, missed opportunities, or direct overbilling.</p>
 
-        <h4>High-Level Leadership for Everyone</h4>
-        <p>My mission is simple: To provide small businesses with the high-level technical leadership they need to scale, without the overhead of a full-time executive salary. I believe that technology should be a multiplier for your business, not a source of constant friction.</p>
-        <p>A Virtual CTO doesn't just fix a broken contact form; they look at your entire business lifecycle—from the first ad impression to the final invoice—and ensure every step is optimized, integrated, and automated.</p>
+        <h4>The $14,000 Billing Oversight</h4>
+        <p>Consider the case of a mid-sized logistics company that decided to "lean out" their operations by laying off their internal IT manager. They figured their systems were stable, so why pay a salary for someone to just "watch the lights"?</p>
+        <p>For two years, nobody was watching. During that time, two of their critical software vendors updated their pricing models and payment gateways. Without an active manager to review the changes or negotiate the new terms, the company was auto-enrolled in legacy pricing tiers.</p>
+        <p>They were being overcharged $175.00 a month for one system and $410.00 a month for another. That is $585.00 a month—$7,020.00 a year—flying out the door for absolutely no gain. Over the two-year period of neglect, they lost over <strong>$14,000</strong>. That is pure profit, vanished, simply because nobody was tasked with managing the vendor relationships.</p>
 
-        <h4>Synchronization Over Management</h4>
-        <p>At OnePoint, we don't just "manage" your tech; we synchronize it. We look for the "One Point" of failure or friction and turn it into a point of strength. Whether it's implementing AI-driven lead qualification, consolidating your SaaS stack, or building a custom automation engine, we ensure your technical roadmap is perfectly aligned with your business goals.</p>
-        <p>Every business deserves a technical foundation that works as hard as they do. That’s why I started OnePoint. Let’s build something efficient.</p>
+        <h4>The $100,000 Broken Link</h4>
+        <p>In another example, a boutique consulting firm with an average client value (ACV) of $9,500 relied on an automated scheduling tool to book discovery calls. They set it up once, tested it, and then forgot about it.</p>
+        <p>A year later, during a routine audit (which they finally decided to pay for), we discovered that a critical API integration between their email marketing platform and their calendar had broken due to a software update. For 12 months, their "nurture sequence" emails had been sending potential high-value clients to a broken link.</p>
+        <p>There was no error message on the homepage. The emails were delivering fine. But the <em>path to conversion</em> was dead. If that broken link cost them just <strong>one</strong> client conversion a month, that is a loss of over <strong>$114,000</strong> in annual revenue. And because nobody was actively auditing the user journey, they never knew.</p>
+
+        <h4>The Uninsurable Breach</h4>
+        <p>Finally, there is the ultimate cost of neglect: security. A retail company was warned repeatedly that their legacy server was vulnerable to a known exploit. They refused to authorize the downtime or the budget for a security patch, viewing it as an unnecessary expense.</p>
+        <p>When the inevitable breach happened, they not only lost customer data but were also found liable for the damages. Because they had a documented history of refusing critical security updates, their cyber-liability insurance carrier denied the claim due to negligence. The cost of the breach came directly out of their operating capital, nearly bankrupting the business.</p>
+
+        <h4>Active Management is an Investment, Not a Cost</h4>
+        <p>Technical systems are not static; they are living ecosystems that degrade over time. Links break, APIs change, software updates introduce bugs, and vendors quietly raise prices. If you are not actively managing your technology, your technology is actively managing you—and it is doing a terrible job.</p>
+        <p>At OnePoint, we believe that maintenance is a competitive advantage. By auditing your systems, managing your vendors, and securing your data, we don't just prevent disasters; we protect your profit margins. Don't wait for the fire to start before you buy an extinguisher.</p>
       </>
     )
   },
-  "5": {
-    title: "The Hidden Cost of SaaS Sprawl: Are You Overpaying for Friction?",
-    date: "October 19, 2025",
-    category: "Cost Optimization",
+  "3": {
+    title: "Technical Debt: The Silent Growth Killer",
+    date: "January 14, 2026",
+    category: "Operations",
     content: (
       <>
-        <p>In today's "there's an app for that" economy, small businesses are falling into a dangerous trap: <strong>SaaS Sprawl</strong>.</p>
-        <p>It starts innocently enough—you sign up for a CRM to manage contacts, a separate tool for email marketing, another for project management, and maybe one more for AI content generation. But as these subscriptions pile up, so does the hidden cost. Research shows that most modern businesses are overspending on software by 20–30%, paying for features they don't use or redundant tools that do the same thing.</p>
+        <p>Technical debt isn't just a term for software developers. For a small business owner, technical debt is the accumulation of "quick fixes," redundant subscriptions, and manual workarounds that eventually become permanent anchors. It’s the legacy CRM you’ve outgrown but are too afraid to leave, the four different software subscriptions that do the same thing, and the "master spreadsheet" that everything relies on but nobody truly understands.</p>
         
-        <h4>The Anatomy of the "Friction Tax"</h4>
-        <p>But the real cost of SaaS Sprawl isn't just the monthly bill. It’s the <strong>Friction Tax</strong>. When your tools don't talk to each other, you are forced to spend hours every week on manual data entry, "copy-pasting" information between systems, and hunting for customer data across five different dashboards. This fragmentation creates data silos that make it impossible to get a clear picture of your business's health.</p>
-        <p>For example, if your sales team has to manually update a spreadsheet because the CRM doesn't sync with your project management tool, you aren't just paying for software—you're paying for human error and wasted time.</p>
-
-        <h4>The Psychological Overhead</h4>
-        <p>Beyond the financial cost, SaaS sprawl creates mental fatigue for you and your team. Having to remember five different logins, navigate five different user interfaces, and figure out which "source of truth" is actually current leads to burnout and operational paralysis. Small businesses often hit a growth ceiling not because they lack leads, but because their internal systems are too messy to handle the volume.</p>
-
-        <h4>Consolidation as a Growth Strategy</h4>
-        <p>At OnePoint, our technical audits often reveal that consolidating your tech stack doesn't just save you thousands in direct software costs—it unlocks hundreds of hours of high-value labor that was previously lost to administrative drudgery.</p>
-        <p>By paying down your "Technical Debt" and moving toward a unified system, you create a foundation that can handle 10x the growth without adding 10x the headcount. Is your tech stack a cohesive engine or a collection of expensive islands? It’s time to find out.</p>
+        <h4>The Anatomy of "SaaS Sprawl"</h4>
+        <p>Most modern businesses overspend on software by 20–30%. This happens through "SaaS Sprawl"—signing up for tools to solve immediate, isolated problems without considering how they fit into the overall ecosystem. These tools often go unused or underutilized, creating a financial leak that grows every month. Worse, they create fragmented data islands, where your customer information is scattered across five different platforms that don't communicate.</p>
+        
+        <h4>Friction vs. Scalability</h4>
+        <p>If your systems require manual intervention to function, you don't have a scalable business; you have a job that grows more difficult with every new client. Scalability is the ability to handle 10x the volume without 10x the work. Technical debt creates "drag" on your operations, meaning every new customer requires more manual effort and mental overhead than the last. Eventually, you hit a ceiling where you simply can't work any harder, and your growth plateaus.</p>
+        
+        <h4>Clearing the Path: The 90-Day Roadmap</h4>
+        <p>The solution to technical debt is a systematic audit. As your Virtual CTO, I help you identify the "rot" in your technical stack, prune the unused expenses, and consolidate your workflows into a stable, integrated foundation. We pay down your technical debt by automating the "drudge work" and building a clean, documented system architecture. By clearing the friction today, you ensure that your business has the structural integrity to handle massive growth tomorrow without breaking.</p>
       </>
     )
   },
-  "6": {
-    title: "AI as an Implementation Layer: The New Secret to Business Agility",
-    date: "November 17, 2025",
+  "2": {
+    title: "How AI Chatbots Can Qualify Leads While You Sleep",
+    date: "December 15, 2025",
     category: "AI & Automation",
     content: (
       <>
-        <p>For years, "automation" meant writing complex code or spending months setting up rigid, brittle workflows in tools like Zapier. It was powerful, but it was slow and unforgiving. If one step in the process changed—say, a field name in your CRM was updated—the whole house of cards would come tumbling down. In 2026, we have entered a new era: <strong>AI as an Implementation Layer</strong>.</p>
+        <p>The biggest mistake small business owners make with their website is treating it like a digital brochure. In 2026, your website should be your most efficient employee. Most lead-capture forms are passive—they wait for a user to fill them out, and then they wait for you to find the time to respond. In the age of instant gratification, if you don't respond to a lead within five minutes, your chances of conversion drop by 400%.</p>
         
-        <h4>The Connective Tissue of Business</h4>
-        <p>Instead of forcing your business processes to fit into rigid software boxes, we use intelligent AI agents to bridge the gaps between your existing tools. AI can now "read" your incoming emails, "understand" the intent behind a customer query, and "execute" the necessary actions across your CRM, project management, and billing software—even if those tools weren't originally designed to work together.</p>
-        <p>Think of AI not as a new tool to manage, but as the "connective tissue" that makes your existing tools smarter. It’s the layer that sits between your disparate systems and ensures data flows where it needs to go, with the context it needs to be useful.</p>
-
-        <h4>Nuance Over Rigidity</h4>
-        <p>Traditional automation fails when things get "fuzzy." If a customer sends an email that doesn't fit a specific template, the automation breaks. An AI implementation layer, however, can handle nuance. It can detect a frustrated tone and escalate a ticket, or it can recognize a high-value opportunity and prioritize it in your sales queue.</p>
-        <p>This shift changes the game for small businesses. You no longer need a massive engineering team to build custom, flexible integrations. You need a strategic roadmap that uses AI to handle the complexity.</p>
-
-        <h4>The Managed Advantage</h4>
-        <p>By using AI as an implementation layer, you gain dynamic workflows that handle nuance, instant scalability without headcount, and true integration where every tool finally talks to the others. At OnePoint, we specialize in building these intelligent implementation layers. Don't just "buy AI"—use it to make your entire business work as one cohesive, agile engine.</p>
+        <h4>The Shift from Capture to Qualification</h4>
+        <p>Capturing an email address is easy; any pop-up can do it. Qualifying a prospect is hard. An intelligent AI agent bridges this gap by engaging visitors the moment they land on your site. Instead of just asking for a name, the AI engages in a strategic conversation: <em>"What is your primary technical challenge? What is your budget for this project? How soon do you need to see results?"</em></p>
+        
+        <h4>Automated Gatekeeping and Nurturing</h4>
+        <p>By the time a lead hits your inbox, the AI has already done the heavy lifting. You aren't just getting an email address; you're getting a qualified dossier. If a prospect isn't a fit for your premium services, the AI doesn't just ignore them—it can politely redirect them to your self-service resources or lower-tier products, nurturing the relationship without costing you a second of your time.</p>
+        
+        <h4>The Managed Advantage: Beyond the "Bot"</h4>
+        <p>Many business owners have been burned by generic, "dumb" chatbots that frustrate users. To be effective, an AI agent needs a <strong>managed knowledge base</strong>. As your Virtual CTO, I don't just "install" a bot. I continuously monitor these interactions, refining the AI’s logic and expanding its ability to handle complex objections based on your actual business data. We turn a simple chat bubble into a sophisticated sales and support engine that operates 24/7, providing instant value to your customers while protecting your calendar from unqualified meetings.</p>
       </>
     )
   },
   "1": {
     title: "The 'Three Expert' Problem: Why Disconnected Systems Kill Profit",
-    date: "December 15, 2025",
+    date: "November 17, 2025",
     category: "Strategy",
     content: (
       <>
@@ -90,41 +92,69 @@ const blogPostsData = {
       </>
     )
   },
-  "2": {
-    title: "How AI Chatbots Can Qualify Leads While You Sleep",
-    date: "January 14, 2026",
+  "6": {
+    title: "AI as an Implementation Layer: The New Secret to Business Agility",
+    date: "October 19, 2025",
     category: "AI & Automation",
     content: (
       <>
-        <p>The biggest mistake small business owners make with their website is treating it like a digital brochure. In 2026, your website should be your most efficient employee. Most lead-capture forms are passive—they wait for a user to fill them out, and then they wait for you to find the time to respond. In the age of instant gratification, if you don't respond to a lead within five minutes, your chances of conversion drop by 400%.</p>
+        <p>For years, "automation" meant writing complex code or spending months setting up rigid, brittle workflows in tools like Zapier. It was powerful, but it was slow and unforgiving. If one step in the process changed—say, a field name in your CRM was updated—the whole house of cards would come tumbling down. In 2026, we have entered a new era: <strong>AI as an Implementation Layer</strong>.</p>
         
-        <h4>The Shift from Capture to Qualification</h4>
-        <p>Capturing an email address is easy; any pop-up can do it. Qualifying a prospect is hard. An intelligent AI agent bridges this gap by engaging visitors the moment they land on your site. Instead of just asking for a name, the AI engages in a strategic conversation: <em>"What is your primary technical challenge? What is your budget for this project? How soon do you need to see results?"</em></p>
-        
-        <h4>Automated Gatekeeping and Nurturing</h4>
-        <p>By the time a lead hits your inbox, the AI has already done the heavy lifting. You aren't just getting an email address; you're getting a qualified dossier. If a prospect isn't a fit for your premium services, the AI doesn't just ignore them—it can politely redirect them to your self-service resources or lower-tier products, nurturing the relationship without costing you a second of your time.</p>
-        
-        <h4>The Managed Advantage: Beyond the "Bot"</h4>
-        <p>Many business owners have been burned by generic, "dumb" chatbots that frustrate users. To be effective, an AI agent needs a <strong>managed knowledge base</strong>. As your Virtual CTO, I don't just "install" a bot. I continuously monitor these interactions, refining the AI’s logic and expanding its ability to handle complex objections based on your actual business data. We turn a simple chat bubble into a sophisticated sales and support engine that operates 24/7, providing instant value to your customers while protecting your calendar from unqualified meetings.</p>
+        <h4>The Connective Tissue of Business</h4>
+        <p>Instead of forcing your business processes to fit into rigid software boxes, we use intelligent AI agents to bridge the gaps between your existing tools. AI can now "read" your incoming emails, "understand" the intent behind a customer query, and "execute" the necessary actions across your CRM, project management, and billing software—even if those tools weren't originally designed to work together.</p>
+        <p>Think of AI not as a new tool to manage, but as the "connective tissue" that makes your existing tools smarter. It’s the layer that sits between your disparate systems and ensures data flows where it needs to go, with the context it needs to be useful.</p>
+
+        <h4>Nuance Over Rigidity</h4>
+        <p>Traditional automation fails when things get "fuzzy." If a customer sends an email that doesn't fit a specific template, the automation breaks. An AI implementation layer, however, can handle nuance. It can detect a frustrated tone and escalate a ticket, or it can recognize a high-value opportunity and prioritize it in your sales queue.</p>
+        <p>This shift changes the game for small businesses. You no longer need a massive engineering team to build custom, flexible integrations. You need a strategic roadmap that uses AI to handle the complexity.</p>
+
+        <h4>The Managed Advantage</h4>
+        <p>By using AI as an implementation layer, you gain dynamic workflows that handle nuance, instant scalability without headcount, and true integration where every tool finally talks to the others. At OnePoint, we specialize in building these intelligent implementation layers. Don't just "buy AI"—use it to make your entire business work as one cohesive, agile engine.</p>
       </>
     )
   },
-  "3": {
-    title: "Technical Debt: The Silent Growth Killer",
-    date: "February 12, 2026",
-    category: "Operations",
+  "5": {
+    title: "The Hidden Cost of SaaS Sprawl: Are You Overpaying for Friction?",
+    date: "September 20, 2025",
+    category: "Cost Optimization",
     content: (
       <>
-        <p>Technical debt isn't just a term for software developers. For a small business owner, technical debt is the accumulation of "quick fixes," redundant subscriptions, and manual workarounds that eventually become permanent anchors. It’s the legacy CRM you’ve outgrown but are too afraid to leave, the four different software subscriptions that do the same thing, and the "master spreadsheet" that everything relies on but nobody truly understands.</p>
+        <p>In today's "there's an app for that" economy, small businesses are falling into a dangerous trap: <strong>SaaS Sprawl</strong>.</p>
+        <p>It starts innocently enough—you sign up for a CRM to manage contacts, a separate tool for email marketing, another for project management, and maybe one more for AI content generation. But as these subscriptions pile up, so does the hidden cost. Research shows that most modern businesses are overspending on software by 20–30%, paying for features they don't use or redundant tools that do the same thing.</p>
         
-        <h4>The Anatomy of "SaaS Sprawl"</h4>
-        <p>Most modern businesses overspend on software by 20–30%. This happens through "SaaS Sprawl"—signing up for tools to solve immediate, isolated problems without considering how they fit into the overall ecosystem. These tools often go unused or underutilized, creating a financial leak that grows every month. Worse, they create fragmented data islands, where your customer information is scattered across five different platforms that don't communicate.</p>
+        <h4>The Anatomy of the "Friction Tax"</h4>
+        <p>But the real cost of SaaS Sprawl isn't just the monthly bill. It’s the <strong>Friction Tax</strong>. When your tools don't talk to each other, you are forced to spend hours every week on manual data entry, "copy-pasting" information between systems, and hunting for customer data across five different dashboards. This fragmentation creates data silos that make it impossible to get a clear picture of your business's health.</p>
+        <p>For example, if your sales team has to manually update a spreadsheet because the CRM doesn't sync with your project management tool, you aren't just paying for software—you're paying for human error and wasted time.</p>
+
+        <h4>The Psychological Overhead</h4>
+        <p>Beyond the financial cost, SaaS sprawl creates mental fatigue for you and your team. Having to remember five different logins, navigate five different user interfaces, and figure out which "source of truth" is actually current leads to burnout and operational paralysis. Small businesses often hit a growth ceiling not because they lack leads, but because their internal systems are too messy to handle the volume.</p>
+
+        <h4>Consolidation as a Growth Strategy</h4>
+        <p>At OnePoint, our technical audits often reveal that consolidating your tech stack doesn't just save you thousands in direct software costs—it unlocks hundreds of hours of high-value labor that was previously lost to administrative drudgery.</p>
+        <p>By paying down your "Technical Debt" and moving toward a unified system, you create a foundation that can handle 10x the growth without adding 10x the headcount. Is your tech stack a cohesive engine or a collection of expensive islands? It’s time to find out.</p>
+      </>
+    )
+  },
+  "4": {
+    title: "Why I started OnePoint CTO: Bridging the Small Business Tech Gap",
+    date: "August 21, 2025",
+    category: "Vision",
+    content: (
+      <>
+        <p>After more than a decade of building technical foundations for high-growth companies and industry leaders, I noticed a recurring, painful pattern. Small and mid-sized businesses were consistently being left behind in the "technical arms race."</p>
+        <p>While enterprise-level companies had dedicated CTOs and engineering teams to navigate the complexities of AI, automation, and systems integration, small businesses were left to manage a patchwork of disconnected freelancers. The result? Fragmented systems, massive software waste, and a ceiling on growth that felt impossible to break.</p>
         
-        <h4>Friction vs. Scalability</h4>
-        <p>If your systems require manual intervention to function, you don't have a scalable business; you have a job that grows more difficult with every new client. Scalability is the ability to handle 10x the volume without 10x the work. Technical debt creates "drag" on your operations, meaning every new customer requires more manual effort and mental overhead than the last. Eventually, you hit a ceiling where you simply can't work any harder, and your growth plateaus.</p>
-        
-        <h4>Clearing the Path: The 90-Day Roadmap</h4>
-        <p>The solution to technical debt is a systematic audit. As your Virtual CTO, I help you identify the "rot" in your technical stack, prune the unused expenses, and consolidate your workflows into a stable, integrated foundation. We pay down your technical debt by automating the "drudge work" and building a clean, documented system architecture. By clearing the friction today, you ensure that your business has the structural integrity to handle massive growth tomorrow without breaking.</p>
+        <h4>The "Siloed Expert" Trap</h4>
+        <p>Most business owners think the solution to growth is hiring more specialists. You hire a web designer for the site, a marketing agency for the ads, and an IT guy for the hardware. But because these experts rarely speak the same language or share a unified roadmap, they create "technical silos."</p>
+        <p>Your data is trapped in separate islands, your leads leak through the gaps between systems, and you end up spending more time managing your vendors than growing your business. I founded <strong>OnePoint CTO</strong> to provide a singular alternative.</p>
+
+        <h4>High-Level Leadership for Everyone</h4>
+        <p>My mission is simple: To provide small businesses with the high-level technical leadership they need to scale, without the overhead of a full-time executive salary. I believe that technology should be a multiplier for your business, not a source of constant friction.</p>
+        <p>A Virtual CTO doesn't just fix a broken contact form; they look at your entire business lifecycle—from the first ad impression to the final invoice—and ensure every step is optimized, integrated, and automated.</p>
+
+        <h4>Synchronization Over Management</h4>
+        <p>At OnePoint, we don't just "manage" your tech; we synchronize it. We look for the "One Point" of failure or friction and turn it into a point of strength. Whether it's implementing AI-driven lead qualification, consolidating your SaaS stack, or building a custom automation engine, we ensure your technical roadmap is perfectly aligned with your business goals.</p>
+        <p>Every business deserves a technical foundation that works as hard as they do. That’s why I started OnePoint. Let’s build something efficient.</p>
       </>
     )
   }
