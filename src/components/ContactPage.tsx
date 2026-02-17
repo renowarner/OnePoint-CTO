@@ -12,24 +12,29 @@ const ContactPage = () => {
     setIsSubmitting(true);
     setError(null);
 
-    const formData = new FormData(e.currentTarget);
+    const data = Object.fromEntries(new FormData(e.currentTarget));
+    console.log('Submitting form data:', data);
     
     try {
       const response = await fetch('https://formspree.io/f/mbdaypwz', {
         method: 'POST',
-        body: formData,
+        body: JSON.stringify(data),
         headers: {
+          'Content-Type': 'application/json',
           'Accept': 'application/json'
         }
       });
 
+      const result = await response.json();
+      console.log('Formspree response:', result);
+
       if (response.ok) {
         setSubmitted(true);
       } else {
-        const data = await response.json();
-        setError(data.error || 'Oops! There was a problem submitting your form');
+        setError(result.error || 'Oops! There was a problem submitting your form');
       }
     } catch (err) {
+      console.error('Fetch error:', err);
       setError('Oops! There was a problem submitting your form');
     } finally {
       setIsSubmitting(false);
