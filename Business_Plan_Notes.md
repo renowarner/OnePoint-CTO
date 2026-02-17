@@ -41,7 +41,7 @@
 - **Target Revenue (Long):** $6,250/mo ($62.50/hr effective).
 
 **Pricing Model:**
-1. **The Audit:** $500 standard (can be discounted to $250 for smaller businesses or as a promotional "hook").
+1. **The Audit:** $750 standard (can be discounted to $500 for smaller businesses or as a promotional "hook").
 2. **V-CTO Retainer (Standard):** $1,250/mo (6-12 month contracts).
 3. **V-CTO Retainer (Premium):** $2,500/mo (For high-complexity/larger clients).
 
@@ -73,12 +73,16 @@
 
 ## Phase 6: Tax & Data Organization
 - **Entity View:** Sole Prop (Schedule C) transitioning to LLC in 90 days.
+- **Company Details:**
+    - **Company Number:** 2062619035
+    - **EIN:** 2062619035
+    - **Name Control:** WARN
 - **Deduction Focus:** 
     - **Home Office:** Dedicated space confirmed (eligible for simplified or actual expense deduction).
     - **Amazon Business Card:** Target application post-LLC formation (Day 90+).
 - **Software Strategy:** 
     - **Current:** Manual tracking via `OnePoint_Expenses_2026.csv` and Wave for Invoicing.
-    - **Wishlist:** **Hello Bonsai** ($25/mo) - Confirmed Chase integration via Plaid. Recommended for integrated contracts and "Command Center" feel.
+    - **Wishlist:** **HoneyBook** - Recommended for integrated contracts, invoicing, and CRM ($1/mo trial pending).
 - **Status:** **Partially Completed.** Separate business account established at Chase for all incoming revenue (Bold IP). Banking is now isolated from personal expenses.
 
 ## Phase 7: Productization of the "Audit"
@@ -106,10 +110,13 @@ Website is live at onepointcto.com with branding, SEO, and blog. Business plan e
 ## Phase 8: Launch Logistics & Outreach
 **Infrastructure Status:**
 - [x] **Business Email:** Established (reno@onepointcto.com).
+- [x] **Email Migration:** Moved OnePoint CTO email management into its own dedicated, trackable account (Slate admin deleted).
 - [x] **Email Signature:** Strategy and drafts finalized.
 - [x] **Domain Registration:** Secured `onepointcto.com`.
 - [x] **DNS Transition:** Records updated in GoDaddy.
 - [x] **Code Rebrand:** Merged website project and pushed to GitHub (onepointcto.com).
+- [x] **EIN Registration:** IRS Confirmation received.
+- [ ] **Business Bank Account:** Open official account using EIN.
 - [ ] **Wave Integration:** Account created (Awaiting bank connection).
 
 **LinkedIn Pre-Launch Checklist:**
@@ -168,3 +175,27 @@ Website is live at onepointcto.com with branding, SEO, and blog. Business plan e
     *   **Referral:** Direct hand-off for a one-time referral fee or reciprocal leads.
     *   **White Label:** Partner sells the "Audit" as part of their own high-ticket package; OnePoint delivers it behind the scenes.
     *   **Strategic Alliance:** Regular quarterly technical reviews for the partner's top-tier clients.
+
+## Phase 13: The "Foundation" Package (Craigslist Outreach)
+**Focus:** High-volume, low-friction setup for household service providers (Landscapers, Plumbers, etc.) found on Craigslist.
+
+### 1. The "Foundation" Offer
+*   **Target:** Small businesses with outdated or non-existent web presence.
+*   **The Problem:** 87% of small business websites are not indexed or connected to Google (they effectively don't exist in search).
+*   **The Solution:** A professionally indexed "Business Hub" including:
+    *   Custom Domain & Branded Business Email.
+    *   Basic Website with Lead Capture (Quotes/Bookings).
+    *   **Pro SEO:** Full indexing on Google/Bing so the business is actually findable.
+*   **Pricing:**
+    *   **Setup Fee:** $750 (1-week delivery goal).
+    *   **Monthly Management:** $250/mo (Includes hosting, basic support, and growth coaching).
+
+### 2. The Pitch (Value Prop)
+*   **Immediate Legitimacy:** Even without active marketing, having a professional site allows owners to get quotes and bookings just by handing out a business card or link.
+*   **Passive Discovery:** Moving from the "invisible 87%" to the indexed results on Google.
+*   **Scalability:** The foundation is set up correctly from Day 1 to grow with the company.
+
+### 3. Internal Business Logic
+*   **Efficiency:** Build and connect the entire stack in a single week.
+*   **ROI:** $250/mo recurring revenue with minimal maintenance creates a stable, long-term baseline.
+*   **Timing:** Launch this campaign immediately after HoneyBook setup is finalized.
