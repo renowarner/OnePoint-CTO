@@ -14,8 +14,15 @@ const AIChatbot: React.FC = () => {
   const [inputValue, setInputValue] = useState('');
   const [threadId, setThreadId] = useState<string | null>(localStorage.getItem('onepoint_chat_thread_id'));
   const [messages, setMessages] = useState<Message[]>(() => {
-    const savedMessages = localStorage.getItem('onepoint_chat_messages');
-    return savedMessages ? JSON.parse(savedMessages) : [
+    try {
+      const savedMessages = localStorage.getItem('onepoint_chat_messages');
+      if (savedMessages) {
+        return JSON.parse(savedMessages);
+      }
+    } catch (error) {
+      console.error('Error loading messages from localStorage:', error);
+    }
+    return [
       {
         id: '1',
         text: "Hi! I'm the OnePoint AI. We help businesses optimize their systems and automate growth. What's your name, and what's on your mind today?",
