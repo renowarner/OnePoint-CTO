@@ -114,6 +114,9 @@ const AIChatbot: React.FC = () => {
               <Send size={18} />
             </button>
           </div>
+          <div className="chat-footer">
+            Managed by OnePoint CTO
+          </div>
         </div>
       )}
     </div>
