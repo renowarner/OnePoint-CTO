@@ -112,7 +112,7 @@ const AIChatbot: React.FC = () => {
       {isOpen && (
         <div className="chat-window">
           <div className="chat-header">
-            <div className="flex items-center gap-2">
+            <div className="chat-header-title">
               <Bot size={20} />
               <h3>OnePoint Assistant</h3>
             </div>
