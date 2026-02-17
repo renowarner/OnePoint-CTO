@@ -128,7 +128,7 @@ const AIChatbot: React.FC = () => {
           <div className="chat-header">
             <div className="chat-header-title">
               <Bot size={20} />
-              <h3>OnePoint Assistant</h3>
+              <h3>OnePoint AI</h3>
             </div>
             <button onClick={() => setIsOpen(false)} className="text-white hover:opacity-70">
               <X size={20} />
