@@ -4,7 +4,7 @@ import './Footer.css'; // Assuming a CSS file for styling
 const Footer = () => {
   return (
     <footer className="site-footer">
-      <p className="copyright">Copyright © 2026 OnePoint CTO. All rights reserved.</p>
+      <p className="copyright">Copyright © 2026 <span>OnePoint CTO</span>. All rights reserved.</p>
     </footer>
   );
 };

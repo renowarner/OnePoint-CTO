@@ -31,7 +31,7 @@ const HomePage = () => {
             <div className="process-item">
               <div className="process-number">2</div>
               <h3>The Integration</h3>
-              <p>I build and synchronize custom AI, lead capture, and automation tools into a single, unified technical roadmap.</p>
+              <p>We build and synchronize custom AI, lead capture, and automation tools into a single, unified technical roadmap.</p>
             </div>
             <div className="process-item">
               <div className="process-number">3</div>
@@ -47,10 +47,10 @@ const HomePage = () => {
           <div className="about-preview-grid">
             <div className="about-preview-content">
               <h2 className="section-title" style={{textAlign: 'left', marginLeft: 0}}>One Voice. One Vision.</h2>
-              <p>Managing multiple specialists means separate bills and disconnected systems. At <strong>OnePoint</strong>, I act as your single point of technical leadership.</p>
-              <p>I integrate your automation, AI, and marketing into one cohesive engine—reducing costs and maximizing your baseline income.</p>
+              <p>Managing multiple specialists means separate bills and disconnected systems. At <strong>OnePoint</strong>, we act as your single point of technical leadership.</p>
+              <p>We integrate your automation, AI, and marketing into one cohesive engine—reducing costs and maximizing your baseline income.</p>
               <div style={{marginTop: '30px'}}>
-                <Link to="/about" className="btn">Learn More About My Approach</Link>
+                <Link to="/about" className="btn">Learn More About Our Approach</Link>
               </div>
             </div>
             <div className="about-preview-stats">
@@ -59,38 +59,28 @@ const HomePage = () => {
                 <span className="stat-label">Years Experience</span>
               </div>
               <div className="stat-card">
-                <span className="stat-number">100%</span>
-                <span className="stat-label">System Integration</span>
+                <span className="stat-number">$478k+</span>
+                <span className="stat-label">Client Savings Identified</span>
+              </div>
+              <div className="stat-card">
+                <span className="stat-number">50+</span>
+                <span className="stat-label">Business Hubs Indexed</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="track-record" className="track-record-section">
+      <section id="services-snapshot" className="services-snapshot-section">
         <div className="container">
-          <h2 className="section-title">Proven Technical Leadership</h2>
-          <p className="track-record-intro">Over a decade of experience optimizing operations and building robust technical foundations for industry leaders.</p>
-          <div className="experience-grid">
-            <div className="experience-item">
-              <h4>Virtual CTO</h4>
-              <p className="experience-org">OnePoint CTO</p>
-              <p className="experience-date">2024 - Current</p>
-            </div>
-            <div className="experience-item">
-              <h4>Lead Tech, Automation Engineer, Systems Support</h4>
-              <p className="experience-org">Bold Patent Law</p>
-              <p className="experience-date">2017 - Current</p>
-            </div>
-            <div className="experience-item">
-              <h4>Automation Test Engineer</h4>
-              <p className="experience-org">247Waiter</p>
-              <p className="experience-date">2016-2017</p>
-            </div>
-            <div className="experience-item">
-              <h4>Quality Assurance Automation Engineer</h4>
-              <p className="experience-org">Search For Yeti</p>
-              <p className="experience-date">2014 - 2016</p>
+          <div className="snapshot-content">
+            <h2 className="section-title">Comprehensive Technical Solutions</h2>
+            <p className="snapshot-intro">
+              From one-time audits to full-scale virtual CTO partnerships, we provide the 
+              leadership and execution you need to scale.
+            </p>
+            <div className="snapshot-actions">
+              <Link to="/services" className="btn btn-secondary btn-lively">Explore All Services</Link>
             </div>
           </div>
         </div>

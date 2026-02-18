@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App'
 import { BrowserRouter as Router } from 'react-router-dom'
+import { Analytics } from "@vercel/analytics/react"
 
 class ErrorBoundary extends Component<{children: ReactNode}, {hasError: boolean}> {
   constructor(props: {children: ReactNode}) {
@@ -38,6 +39,7 @@ createRoot(document.getElementById('root')!).render(
     <ErrorBoundary>
       <Router>
         <App />
+        <Analytics />
       </Router>
     </ErrorBoundary>
   </StrictMode>,

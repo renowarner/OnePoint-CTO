@@ -23,7 +23,7 @@ const blogPostsData = {
         <p>There was no error message on the homepage. The emails were delivering fine. But the <em>path to conversion</em> was dead. If that broken link cost them just <strong>one</strong> client conversion a month, that is a loss of over <strong>$114,000</strong> in annual revenue. And because nobody was actively auditing the user journey, they never knew.</p>
 
         <h4>The Uninsurable Breach</h4>
-        <p>Finally, there is the ultimate cost of neglect: security. A retail company was warned repeatedly that their legacy server was vulnerable to a known exploit. They refused to authorize the downtime or the budget for a security patch, viewing it as an unnecessary expense.</p>
+        <p>There is the ultimate cost of neglect: security. A retail company was warned repeatedly that their legacy server was vulnerable to a known exploit. They refused to authorize the downtime or the budget for a security patch, viewing it as an unnecessary expense.</p>
         <p>When the inevitable breach happened, they not only lost customer data but were also found liable for the damages. Because they had a documented history of refusing critical security updates, their cyber-liability insurance carrier denied the claim due to negligence. The cost of the breach came directly out of their operating capital, nearly bankrupting the business.</p>
 
         <h4>Active Management is an Investment, Not a Cost</h4>

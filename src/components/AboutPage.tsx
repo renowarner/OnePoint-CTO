@@ -40,6 +40,45 @@ const AboutPage = () => {
           </div>
         </div>
       </section>
+
+      <section id="track-record" className="track-record-section">
+        <div className="container">
+          <h2 className="section-title">Proven Technical Leadership</h2>
+          <p className="track-record-intro">Over a decade of experience optimizing operations and building robust technical foundations for industry leaders.</p>
+          
+          <div className="experience-grid top-row">
+            <div className="experience-item">
+              <h4>Chief Technology Officer</h4>
+              <p className="experience-org">Thyrsus Consulting</p>
+              <p className="experience-date">2023 - 2025</p>
+            </div>
+            <div className="experience-item featured-xp">
+              <h4>Founder & Principal V-CTO</h4>
+              <p className="experience-org">OnePoint CTO</p>
+              <p className="experience-date">2025 - Current</p>
+            </div>
+            <div className="experience-item">
+              <h4>Chief Technology Officer</h4>
+              <p className="experience-org">Bold Patent Law</p>
+              <p className="experience-date">2017 - 2024</p>
+            </div>
+          </div>
+
+          <div className="experience-grid bottom-row">
+            <div className="experience-item">
+              <h4>Automation Test Engineer</h4>
+              <p className="experience-org">247Waiter</p>
+              <p className="experience-date">2016 - 2017</p>
+            </div>
+            <div className="experience-item">
+              <h4>Quality Assurance Automation Engineer</h4>
+              <p className="experience-org">Search For Yeti</p>
+              <p className="experience-date">2014 - 2016</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
   );
 };

@@ -26,7 +26,7 @@ const SystemAdministration = () => {
                 OnePoint bridges that gap.
               </p>
               <p>
-                As your Virtual CTO, I don't just "fix things." I provide the <strong>strategic roadmap</strong> 
+                As your Virtual CTO, we don't just "fix things." We provide the <strong>strategic roadmap</strong> 
                 necessary to ensure your technical decisions are driving your financial goals. We focus on 
                 long-term stability, technical debt reduction, and ensuring your systems are ready to 
                 scale whenever you are.
@@ -39,7 +39,7 @@ const SystemAdministration = () => {
                 </div>
                 <div className="pillar">
                   <h4>Vendor & Team Liaison</h4>
-                  <p>I act as your primary technical voice, translating your business needs into actionable requirements for third-party developers, SaaS providers, and IT vendors. No more getting lost in technical jargon.</p>
+                  <p>We act as your primary technical voice, translating your business needs into actionable requirements for third-party developers, SaaS providers, and IT vendors. No more getting lost in technical jargon.</p>
                 </div>
                 <div className="pillar">
                   <h4>Strategic Cost Control</h4>
