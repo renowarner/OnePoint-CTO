@@ -3,13 +3,10 @@
 
 **BETWEEN:**
 **OnePoint CTO** ("Provider")
-[Your Address / City, State]
 Email: reno@onepointcto.com
 
 **AND:**
 **[Client Company Name]** ("Client")
-[Client Address]
-[Client Contact Name / Email]
 
 ---
 

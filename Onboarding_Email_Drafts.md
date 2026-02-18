@@ -77,3 +77,93 @@ If you use any other critical software (industry-specific tools, legacy database
 Excited to get started!
 
 Best,
+
+---
+**TEMPLATE 4: Send for Signature (Mutual NDA)**
+**Subject:** Mutual NDA for Review and Signature - [Client Company Name] / OnePoint CTO
+
+Hi **[Client Name]**,
+
+As discussed, attached is the Mutual Non-Disclosure Agreement (NDA) for your review. This standard agreement ensures that we can freely discuss your proprietary business information and technical systems with full confidentiality as we explore a potential partnership.
+
+**Action Required:**
+Please review, sign, and return the attached PDF at your earliest convenience. Having this on file allows us to speak openly about your technical infrastructure and strategic goals during our upcoming sessions.
+
+If you have any questions about specific clauses, I'm happy to walk through them.
+
+Looking forward to our conversation.
+
+Best regards,
+
+**Reno Warner**
+Founder / V-CTO
+OnePoint CTO
+
+---
+**TEMPLATE 5: Foundation Package Agreement**
+**Subject:** Foundation Package Service Agreement - [Client Company Name] / OnePoint CTO
+
+Hi **[Client Name]**,
+
+It was great discussing the "Business Hub" setup for **[Client Company Name]**. I’m excited to help you establish a professional technical foundation that is fully indexed and ready to capture leads.
+
+Attached is the Service Agreement for the Foundation Package. This document outlines the initial setup (domain, email, branding, and SEO) as well as the ongoing active administration and monthly summary reporting included in the management fee.
+
+**Action Required:**
+Please review, sign, and return the attached PDF. Once received, I will send over the initial invoice and we can officially kick off your setup.
+
+If you have any questions regarding the terms or the 48-hour service level agreement, please let me know.
+
+Best regards,
+
+**Reno Warner**
+Founder / V-CTO
+OnePoint CTO
+reno@onepointcto.com
+onepointcto.com
+
+---
+**TEMPLATE 6: V-CTO Retainer Agreement**
+**Subject:** V-CTO Retainer Service Agreement - [Client Company Name] / OnePoint CTO
+
+Hi **[Client Name]**,
+
+I’m looking forward to acting as your Virtual CTO and providing the technical leadership needed to scale **[Client Company Name]** efficiently.
+
+Attached is our V-CTO Retainer Service Agreement. As we discussed, this retainer provides you with up to 25 hours per month of dedicated support, including strategic roadmap development, automation maintenance, and active system administration. This agreement also includes a priority **24-hour response time** for all technical requests.
+
+**Action Required:**
+Please review, sign, and return the attached PDF. Once signed, we will move directly into the systems onboarding phase to ensure I have the access needed to begin managing your technical operations.
+
+I’m excited to get to work and help drive your technical strategy forward.
+
+Best regards,
+
+**Reno Warner**
+Founder / V-CTO
+OnePoint CTO
+reno@onepointcto.com
+onepointcto.com
+
+---
+**TEMPLATE 7: OnePoint Audit Agreement**
+**Subject:** OnePoint Audit Service Agreement - [Client Company Name]
+
+Hi **[Client Name]**,
+
+I’m ready to get started on the **OnePoint Audit** for **[Client Company Name]**. This deep-dive is the first step toward trimming unnecessary technical costs and automating the manual friction in your current workflows.
+
+Attached is the Service Agreement for the Audit. This outlines the scope of my review—including your SaaS stack, security protocols, and automation opportunities—as well as the final 90-Day Technical Roadmap you will receive at the end of the process.
+
+**Action Required:**
+Please review, sign, and return the attached PDF. Once I have the signed copy, I will send over the invoice and the systems access checklist so we can begin the discovery phase.
+
+Looking forward to helping you streamline your technical operations.
+
+Best regards,
+
+**Reno Warner**
+Founder / V-CTO
+OnePoint CTO
+reno@onepointcto.com
+onepointcto.com
