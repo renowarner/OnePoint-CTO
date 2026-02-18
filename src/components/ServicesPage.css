@@ -108,6 +108,14 @@
   letter-spacing: 1px;
 }
 
+.strikethrough-price {
+  text-decoration: line-through;
+  color: var(--text-gray);
+  font-size: 0.7em !important; /* Make it smaller than the main price */
+  margin-right: 10px;
+  opacity: 0.7;
+}
+
 .tier-description {
   color: var(--text-gray);
   margin-bottom: 25px;

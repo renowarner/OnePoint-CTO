@@ -23,7 +23,7 @@ const ServicesPage = () => {
               <div className="tier-tag">The First Step</div>
               <div className="card-header-main">
                 <h3>Technical & Operational Audit</h3>
-                <p className="tier-price">$750 <span>/ Full Engagement</span></p>
+                <p className="tier-price"><span className="strikethrough-price">$1500</span> $750 <span>/ Full Engagement</span></p>
               </div>
               <p className="tier-description">
                 A high-impact evaluation of your entire technical landscape. We uncover hidden costs, 
@@ -44,58 +44,61 @@ const ServicesPage = () => {
 
           <div className="services-main-grid">
             
-            {/* V-CTO Retainer */}
+            {/* Foundation Package (Left) */}
             <div className="service-tier-card">
-              <div className="tier-tag">Continuous</div>
-              <h3>Virtual CTO</h3>
-              <p className="tier-price">Monthly <span>Partnership</span></p>
+              <div className="tier-tag">Business Launch</div>
+              <h3>The Foundation Package</h3>
+              <p className="tier-price">Comprehensive <span>Setup</span></p>
               <p className="tier-description">
-                Ongoing strategic direction for businesses ready to scale. We act as your primary technical 
-                officer, handling high-level decisions and systems management without the overhead of a full-time executive.
+                The "Business Hub" starter kit. We establish your professional digital presence 
+                in one week—ensuring you are indexed, branded, and ready to capture leads 
+                from Day 1. Stop being invisible to Google.
               </p>
               <ul className="tier-features">
-                <li>Active Systems Management & Stability</li>
-                <li>Strategic Architectural Guidance</li>
-                <li>Cybersecurity & Data Governance</li>
-                <li>Vendor Management & Technical Debt Control</li>
+                <li><strong>Professional Identity:</strong> Domain, Business Email, and Light Branding.</li>
+                <li><strong>Business Hub Site:</strong> Mobile-responsive design with lead capture.</li>
+                <li><strong>Total Indexing:</strong> Submission to Google Search Console & Bing.</li>
+                <li><strong>Active Management:</strong> Hosting, security, and monthly reporting included.</li>
               </ul>
-              <Link to="/system-administration" className="btn btn-tier">Learn More About V-CTO</Link>
+              <Link to="/web-presence-growth" className="btn btn-tier">Get Your Foundation</Link>
             </div>
 
-            {/* Integration & Growth */}
-            <div className="service-tier-card">
-              <div className="tier-tag">Implementation</div>
-              <h3>AI & Operational Automation</h3>
-              <p className="tier-price">Project <span>Execution</span></p>
+            {/* V-CTO Retainer (Center) */}
+            <div className="service-tier-card featured">
+              <div className="tier-tag">Strategic Partnership</div>
+              <h3>V-CTO Retainer</h3>
+              <p className="tier-price">Monthly <span>Leadership</span></p>
               <p className="tier-description">
-                Direct deployment of intelligent systems. We build the "Implementation Layer" that turns 
-                your technical goals into automated realities, reducing labor hours and increasing lead conversion.
+                For businesses ready to scale. We act as your dedicated technical partner, providing 
+                ongoing strategic direction, automation maintenance, and system stability. 
+                Get the leadership of a Chief Technology Officer without the executive salary.
               </p>
               <ul className="tier-features">
-                <li>Custom AI Chatbot Architecture</li>
-                <li>Automated Lead Capture & Routing</li>
-                <li>No-Code Workflow Engineering</li>
-                <li>Legacy System Interconnectivity</li>
+                <li><strong>24-Hour Response SLA:</strong> Priority support for critical systems.</li>
+                <li><strong>Strategic Roadmap:</strong> Continuous alignment of tech with business goals.</li>
+                <li><strong>Vendor Management:</strong> We handle the hosting, SaaS, and third-party disputes.</li>
+                <li><strong>Automation Maintenance:</strong> Proactive tuning of your AI and workflow agents.</li>
               </ul>
-              <Link to="/no-code-system-design" className="btn btn-tier">See Implementation Examples</Link>
+              <Link to="/system-administration" className="btn btn-tier">Explore V-CTO Services</Link>
             </div>
 
-            {/* Web Presence & Growth */}
+            {/* Specialized Implementation (Right) */}
             <div className="service-tier-card">
-              <div className="tier-tag">Visibility</div>
-              <h3>Digital Foundation & SEO</h3>
-              <p className="tier-price">Market <span>Growth</span></p>
+              <div className="tier-tag">Project Based</div>
+              <h3>Custom Technical Solutions</h3>
+              <p className="tier-price">Tailored <span>Scope</span></p>
               <p className="tier-description">
-                Structural dominance in your digital market. We focus on the "invisible" technical SEO and 
-                indexing that ensures your business is found by the right people at the right time.
+                Targeted execution for specific technical needs. From deploying complex AI agents 
+                to integrating legacy databases, we build the "Implementation Layer" that 
+                automates your unique business logic.
               </p>
               <ul className="tier-features">
-                <li>SEO-First Site Architecture</li>
-                <li>Search Engine Indexing & Connectivity</li>
-                <li>Automated Lead Nurturing Loops</li>
-                <li>Conversion & Performance Analytics</li>
+                <li><strong>Modular Add-Ons:</strong> AI Chatbots, Lead Gen, & Marketing.</li>
+                <li><strong>Custom Architecture:</strong> Complex API Integrations & Tools.</li>
+                <li><strong>Legacy Migration:</strong> Modernizing old systems.</li>
+                <li><strong>Workflow Engineering:</strong> Connecting your disconnected apps.</li>
               </ul>
-              <Link to="/web-presence-growth" className="btn btn-tier">Review Visibility Growth</Link>
+              <Link to="/system-integration" className="btn btn-tier">View Solutions & Add-Ons</Link>
             </div>
 
           </div>

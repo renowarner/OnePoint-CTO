@@ -25,7 +25,7 @@ const AIChatbot: React.FC = () => {
     return [
       {
         id: '1',
-        text: "Hi! I'm the OnePoint AI. We help businesses optimize their systems and automate growth. What's your name, and what's on your mind today?",
+        text: "Hi! I'm Dexter, the OnePoint AI. We help businesses optimize their systems and automate growth. What's your name, and what's on your mind today?",
         sender: 'bot',
         timestamp: new Date()
       }

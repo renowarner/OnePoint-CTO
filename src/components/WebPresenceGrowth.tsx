@@ -22,7 +22,7 @@ const WebPresenceGrowth = () => {
               <p>
                 In 2026, a "pretty website" is no longer enough. The digital landscape is 
                 highly technical—if your site isn't structured correctly for search 
-                engines, it effectively doesn't exist. I focus on the <strong>technical foundation</strong> 
+                engines, it effectively doesn't exist. We focus on the <strong>technical foundation</strong> 
                 that drives organic visibility and ensures your site is fast, responsive, 
                 and fully indexed.
               </p>
@@ -35,22 +35,22 @@ const WebPresenceGrowth = () => {
               <div className="vcto-pillars">
                 <div className="pillar">
                   <h4>Technical & Structural SEO</h4>
-                  <p>I implement deep structural SEO, including schema markup, sitemap optimization, and high-performance site architecture. We don't just add keywords; we make your business technically superior to your competitors in the eyes of Google.</p>
+                  <p>We implement deep structural SEO, including schema markup, sitemap optimization, and high-performance site architecture. We don't just add keywords; we make your business technically superior to your competitors in the eyes of Google.</p>
                 </div>
                 <div className="pillar">
                   <h4>Automated Lead Nurturing</h4>
-                  <p>Traffic is useless if it doesn't convert. I build automated "nurture loops" that capture lead information and trigger intelligent email sequences, keeping your brand top-of-mind until the prospect is ready to buy.</p>
+                  <p>Traffic is useless if it doesn't convert. We build automated "nurture loops" that capture lead information and trigger intelligent email sequences, keeping your brand top-of-mind until the prospect is ready to buy.</p>
                 </div>
                 <div className="pillar">
                   <h4>Search Console & Analytics Integration</h4>
-                  <p>Get clear data on where your leads are coming from. I set up professional-grade tracking and performance dashboards so you can see the direct ROI of your digital foundation.</p>
+                  <p>Get clear data on where your leads are coming from. We set up professional-grade tracking and performance dashboards so you can see the direct ROI of your digital foundation.</p>
                 </div>
               </div>
 
               <div className="vcto-deep-dive mt-8">
                 <h3>The "Invisible" Advantage</h3>
                 <p>
-                  Most marketing agencies focus on the visual. I focus on the technical. 
+                  Most marketing agencies focus on the visual. We focus on the technical. 
                   By ensuring your site is technically flawless, mobile-optimized, and 
                   lightning-fast, we provide a user experience that naturally leads to 
                   higher rankings and better conversion rates.

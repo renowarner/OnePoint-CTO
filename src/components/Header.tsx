@@ -44,8 +44,9 @@ const Header = () => {
                   Services & Solutions
                 </NavLink>
                 <ul className="dropdown-menu">
+                  <li><NavLink to="/services" onClick={closeMenu}>Overview</NavLink></li>
                   <li><NavLink to="/system-administration" onClick={closeMenu}>Virtual CTO Retainer</NavLink></li>
-                  <li><NavLink to="/no-code-system-design" onClick={closeMenu}>AI & Automation Integration</NavLink></li>
+                  <li><NavLink to="/system-integration" onClick={closeMenu}>Custom Technical Solutions</NavLink></li>
                   <li><NavLink to="/managed-ai-chatbots" onClick={closeMenu}>Managed AI Chatbots</NavLink></li>
                   <li><NavLink to="/web-presence-growth" onClick={closeMenu}>Web Presence & Growth</NavLink></li>
                 </ul>

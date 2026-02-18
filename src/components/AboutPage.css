@@ -85,3 +85,97 @@
   }
 }
 
+/* Track Record Section (Migrated from Home) */
+.track-record-section {
+  padding: 100px 0;
+  background-color: transparent;
+  border-top: 1px solid var(--bg-navy-lighter);
+}
+
+.track-record-intro {
+  text-align: center;
+  font-size: 1.4em;
+  color: var(--text-gray);
+  max-width: 800px;
+  margin: 0 auto 80px;
+}
+
+.experience-grid {
+  display: grid;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.experience-grid.top-row {
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 30px;
+}
+
+.experience-grid.bottom-row {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.experience-grid.bottom-row .experience-item {
+  flex: 0 1 350px; /* Base width for bottom items */
+}
+
+.experience-item {
+  background-color: var(--bg-navy-light);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--bg-navy-lighter); /* Uniform 1px border */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-cyan); /* Highlights all 4 sides equally */
+  background-color: rgba(0, 210, 255, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.experience-item.featured-xp {
+  border-color: var(--accent-cyan);
+  background-color: rgba(0, 210, 255, 0.03);
+  position: relative;
+  top: -10px; /* Keep visual elevation */
+  box-shadow: 0 8px 25px rgba(0, 210, 255, 0.1);
+}
+
+.experience-item h4 {
+  color: var(--text-white);
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.experience-org {
+  color: var(--accent-cyan);
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.experience-date {
+  color: var(--text-gray);
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  .experience-grid.top-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .experience-item.featured-xp {
+    top: 0;
+    order: -1; /* Keep OnePoint at top on mobile */
+  }
+}
