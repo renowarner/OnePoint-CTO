@@ -1,8 +1,5 @@
 import './ContactPage.css';
 import { Link } from 'react-router-dom';
-
-import './ContactPage.css';
-import { Link } from 'react-router-dom';
 import HoneyBookWidget from './HoneyBookWidget';
 
 const ContactPage = () => {
