@@ -13,7 +13,11 @@ const ContactPage = () => {
           </p>
           
           <div className="honeybook-embed-container" style={{ marginTop: '3rem' }}>
-            <HoneyBookWidget formId="6993e75040496000079b463b">
+            <HoneyBookWidget 
+              formId="6993e75040496000079b463b"
+              directLink="mailto:reno@onepointcto.com"
+              fallbackText="Trouble with the form? Email us directly."
+            >
               <div className="consultation-section" style={{ marginTop: 0, paddingBottom: 0 }}>
                 <span className="consultation-label">Or skip the form: </span>
                 <Link to="/schedule-consultation" className="consultation-btn-link">Schedule a Consultation</Link>

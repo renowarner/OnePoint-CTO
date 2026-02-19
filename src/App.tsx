@@ -15,6 +15,9 @@ import BlogPage from './components/BlogPage';
 import BlogPost from './components/BlogPost';
 import AIChatbot from './components/AIChatbot';
 import ThankYouPage from './components/ThankYouPage';
+import ConsultationThankYouPage from './components/ConsultationThankYouPage';
+import LinkedInPage from './components/LinkedInPage';
+import CraigslistPage from './components/CraigslistPage';
 
 function App() {
   const location = useLocation();
@@ -46,6 +49,9 @@ function App() {
         <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/thank-you" element={<ThankYouPage />} />
+        <Route path="/consultation-thank-you" element={<ConsultationThankYouPage />} />
+        <Route path="/linkedin" element={<LinkedInPage />} />
+        <Route path="/craigslist" element={<CraigslistPage />} />
       </Routes>
       <Footer />
       <AIChatbot />

@@ -6,9 +6,19 @@ interface HoneyBookWidgetProps {
   children?: React.ReactNode;
   legacy?: boolean;
   suffix?: string;
+  directLink?: string;
+  fallbackText?: string;
 }
 
-const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId, companyId, children, legacy = false, suffix = "1" }) => {
+const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ 
+  formId, 
+  companyId, 
+  children, 
+  legacy = false, 
+  suffix = "1",
+  directLink,
+  fallbackText = "Trouble loading? Click here to open in a new window."
+}) => {
   const [isLocal, setIsLocal] = useState(false);
   const initialized = useRef(false);
 
@@ -99,9 +109,21 @@ const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId, companyId, ch
       </div>
 
       {/* Render optional content (like the consultation link) inside the card */}
-      {children && (
-        <div style={{ marginTop: '30px', borderTop: '1px solid #233554', paddingTop: '20px' }}>
+      {(children || directLink) && (
+        <div style={{ marginTop: '30px', borderTop: '1px solid #233554', paddingTop: '20px', textAlign: 'center' }}>
           {children}
+          {directLink && (
+            <div style={{ marginTop: children ? '15px' : '0' }}>
+              <a 
+                href={directLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                style={{ color: '#00D2FF', textDecoration: 'none', fontSize: '0.9rem' }}
+              >
+                {fallbackText}
+              </a>
+            </div>
+          )}
         </div>
       )}
     </div>
