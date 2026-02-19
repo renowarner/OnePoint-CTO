@@ -2,10 +2,12 @@ import React, { useEffect, useRef, useState } from 'react';
 
 interface HoneyBookWidgetProps {
   formId: string;
+  companyId?: string; // Required for legacy
   children?: React.ReactNode;
+  legacy?: boolean;
 }
 
-const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId, children }) => {
+const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId, companyId, children, legacy = false }) => {
   const [isLocal, setIsLocal] = useState(false);
   const initialized = useRef(false);
 
@@ -13,29 +15,37 @@ const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId, children }) =
     setIsLocal(window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
 
     try {
-      // 1. Initialize Global Object with NEW ID
-      const w = window as any;
-      w._HB_ = w._HB_ || {};
-      w._HB_.pid = formId;
-
-      // 2. Force Script Reload
-      // We remove the existing script to force HoneyBook to re-initialize with the new PID.
-      const scriptId = 'hb-placement-controller';
+      const scriptId = 'hb-script-loader';
       const existingScript = document.getElementById(scriptId);
-      if (existingScript) {
-        existingScript.remove();
-      }
+      if (existingScript) existingScript.remove();
 
       const script = document.createElement('script');
       script.id = scriptId;
-      script.src = "https://widget.honeybook.com/assets_users_production/websiteplacements/placement-controller.min.js";
       script.async = true;
+
+      if (legacy) {
+        // LEGACY EMBED LOGIC
+        (window as any)._hb_params = (window as any)._hb_params || [];
+        (window as any)._hb_params.push({
+          ad_id: formId,
+          company_id: companyId,
+          type: 'scheduler' // or contact_form
+        });
+        script.src = 'https://www.honeybook.com/assets/js/widget_embed.js';
+      } else {
+        // MODERN EMBED LOGIC
+        const w = window as any;
+        w._HB_ = w._HB_ || {};
+        w._HB_.pid = formId;
+        script.src = "https://widget.honeybook.com/assets_users_production/websiteplacements/placement-controller.min.js";
+      }
+
       document.body.appendChild(script);
 
     } catch (err) {
       console.error("HoneyBook Widget Injection Error:", err);
     }
-  }, [formId]);
+  }, [formId, legacy, companyId]);
 
   return (
     <div className="hb-widget-card" style={{
@@ -72,8 +82,10 @@ const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId, children }) =
       </div>
 
       <div className="hb-widget-container" style={{ width: '100%', minHeight: '600px', position: 'relative', zIndex: 1 }}>
-        {/* Target div for the HoneyBook script */}
+        {/* Target div for Modern scripts */}
         <div className={`hb-p-${formId}-1`} />
+        {/* Target div for Legacy scripts */}
+        <div className={`hb-p-${formId}`} />
       
       {/* Tracking pixel */}
       <img 
