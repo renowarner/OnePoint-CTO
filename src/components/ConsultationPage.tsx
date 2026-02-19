@@ -10,7 +10,7 @@ const ConsultationPage = () => {
             formId="6993e75040496000079b463b" 
             suffix="2"
             legacy={false}
-            directLink="https://companyname384300.hbportal.co/public/6996b6134b97cc0033b37862"
+            directLink="https://companyname384300.hbportal.co/public/discovery-consult"
             fallbackText="Trouble loading the scheduler? Click here to book directly."
           />
         </div>

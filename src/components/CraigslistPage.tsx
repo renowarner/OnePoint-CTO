@@ -50,7 +50,7 @@ const CraigslistPage = () => {
                 suffix="2"
                 legacy={false}
                 leadSource="Craigslist Ad"
-                directLink="https://companyname384300.hbportal.co/public/6996b6134b97cc0033b37862"
+                directLink="https://companyname384300.hbportal.co/public/discovery-consult"
                 fallbackText="Trouble loading the scheduler? Click here to book directly."
               />
           </div>
