@@ -8,6 +8,7 @@ interface HoneyBookWidgetProps {
   suffix?: string;
   directLink?: string;
   fallbackText?: string;
+  leadSource?: string;
 }
 
 const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ 
@@ -17,7 +18,8 @@ const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({
   legacy = false, 
   suffix = "1",
   directLink,
-  fallbackText = "Trouble loading? Click here to open in a new window."
+  fallbackText = "Trouble loading? Click here to open in a new window.",
+  leadSource
 }) => {
   const [isLocal, setIsLocal] = useState(false);
   const initialized = useRef(false);
