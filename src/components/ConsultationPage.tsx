@@ -6,7 +6,6 @@ const ConsultationPage = () => {
     <div className="consultation-page-container">
       <div className="container">
         <div className="consultation-content">
-          <h2>Schedule Your Discovery Call</h2>
           <HoneyBookWidget 
             formId="6993e75040496000079b463b" 
             suffix="2"

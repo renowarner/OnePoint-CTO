@@ -55,7 +55,7 @@ const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId, companyId, ch
       borderRadius: '12px',
       padding: '20px',
       boxShadow: '0 15px 35px rgba(0, 0, 0, 0.4)',
-      maxWidth: '800px',
+      maxWidth: '1100px',
       width: '100%',
       margin: '0 auto',
       position: 'relative',
