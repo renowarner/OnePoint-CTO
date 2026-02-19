@@ -22,16 +22,16 @@ const ThankYouPage = () => {
               <p>See how OnePoint CTO can optimize your tech stack.</p>
             </Link>
             
-            <Link to="/blog/technical-debt" className="action-card">
-              <div className="icon">📉</div>
-              <h4>Technical Debt</h4>
-              <p>Read about the "Silent Growth Killer" in small business.</p>
+            <Link to="/blog" className="action-card">
+              <div className="icon">💡</div>
+              <h4>Read the Blog</h4>
+              <p>Insights on automation, AI, and system efficiency.</p>
             </Link>
 
-            <Link to="/blog/three-expert-problem" className="action-card">
-              <div className="icon">🧩</div>
-              <h4>The 3-Expert Problem</h4>
-              <p>Why disconnected systems kill profit and how to fix it.</p>
+            <Link to="/about" className="action-card">
+              <div className="icon">👋</div>
+              <h4>About Me</h4>
+              <p>Learn more about my background and approach.</p>
             </Link>
           </div>
         </div>
