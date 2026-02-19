@@ -8,30 +8,37 @@ const ThankYouPage = () => {
         <h1>Message Received</h1>
         <div className="divider"></div>
         <p className="confirmation-text">
-          Thank you for reaching out. I've received your message and will get back to you shortly.
+          Thank you for reaching out. I've received your inquiry and will review it shortly. 
+          Expect a response within 24-48 business hours. In the meantime, I've gathered a few resources 
+          below to help you get started on your journey toward a more efficient tech stack.
         </p>
         
         <div className="next-steps">
-          <h3>While you wait...</h3>
-          <p>Explore how I help businesses reclaim their time and sanity.</p>
+          <h3>Continue Your Journey</h3>
           
           <div className="action-grid">
             <Link to="/services" className="action-card">
-              <div className="icon">🚀</div>
-              <h4>Explore Services</h4>
-              <p>See how OnePoint CTO can optimize your tech stack.</p>
+              <h4>System Optimization</h4>
+              <p>
+                From audit to implementation, see the specific frameworks I use to help small businesses 
+                reclaim 10+ hours a week through automation.
+              </p>
             </Link>
             
             <Link to="/blog" className="action-card">
-              <div className="icon">💡</div>
-              <h4>Read the Blog</h4>
-              <p>Insights on automation, AI, and system efficiency.</p>
+              <h4>Technical Insights</h4>
+              <p>
+                Read deep-dives on the cost of SaaS sprawl, the reality of AI implementation, and why 
+                disconnected systems are the silent profit killer.
+              </p>
             </Link>
 
             <Link to="/about" className="action-card">
-              <div className="icon">👋</div>
-              <h4>About Me</h4>
-              <p>Learn more about my background and approach.</p>
+              <h4>The OnePoint Approach</h4>
+              <p>
+                Learn why I started OnePoint CTO and how my background in technical leadership 
+                drives my focus on ROI-first business systems.
+              </p>
             </Link>
           </div>
         </div>
