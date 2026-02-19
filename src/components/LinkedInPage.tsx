@@ -1,18 +1,8 @@
 import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
 import './LinkedInPage.css';
 import HoneyBookWidget from './HoneyBookWidget';
 
 const LinkedInPage = () => {
-  // Force UTM source for HoneyBook tracking
-  useEffect(() => {
-    const url = new URL(window.location.href);
-    if (!url.searchParams.has('utm_source')) {
-      url.searchParams.set('utm_source', 'Linked In Profile');
-      window.history.replaceState({}, '', url.toString());
-    }
-  }, []);
-
   return (
     <div className="audit-page-container">
       <section className="services-hero">
