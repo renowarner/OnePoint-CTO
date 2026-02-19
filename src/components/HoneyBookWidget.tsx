@@ -60,6 +60,11 @@ const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({
     }
   }, [formId, legacy, companyId]);
 
+  // Append leadSource to directLink if available
+  const finalDirectLink = directLink && leadSource 
+    ? `${directLink}${directLink.includes('?') ? '&' : '?'}utm_source=${encodeURIComponent(leadSource)}`
+    : directLink;
+
   return (
     <div className="hb-widget-card" style={{
       backgroundColor: '#112240',
@@ -111,13 +116,13 @@ const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({
       </div>
 
       {/* Render optional content (like the consultation link) inside the card */}
-      {(children || directLink) && (
+      {(children || finalDirectLink) && (
         <div style={{ marginTop: '30px', borderTop: '1px solid #233554', paddingTop: '20px', textAlign: 'center' }}>
           {children}
-          {directLink && (
+          {finalDirectLink && (
             <div style={{ marginTop: children ? '15px' : '0' }}>
               <a 
-                href={directLink} 
+                href={finalDirectLink} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 style={{ color: '#00D2FF', textDecoration: 'none', fontSize: '0.9rem' }}
