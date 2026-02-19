@@ -6,10 +6,11 @@ const ConsultationPage = () => {
     <div className="consultation-page-container">
       <div className="container">
         <div className="consultation-content">
+          <h2>Schedule Your Discovery Call</h2>
           <HoneyBookWidget 
-            formId="69968c6b1304000028b011ef" 
-            companyId="one_point_cto_297144"
-            legacy={true}
+            formId="6993e75040496000079b463b" 
+            suffix="2"
+            legacy={false}
           />
         </div>
       </div>

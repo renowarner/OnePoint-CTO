@@ -2,12 +2,13 @@ import React, { useEffect, useRef, useState } from 'react';
 
 interface HoneyBookWidgetProps {
   formId: string;
-  companyId?: string; // Required for legacy
+  companyId?: string; 
   children?: React.ReactNode;
   legacy?: boolean;
+  suffix?: string;
 }
 
-const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId, companyId, children, legacy = false }) => {
+const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId, companyId, children, legacy = false, suffix = "1" }) => {
   const [isLocal, setIsLocal] = useState(false);
   const initialized = useRef(false);
 
@@ -83,7 +84,7 @@ const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId, companyId, ch
 
       <div className="hb-widget-container" style={{ width: '100%', minHeight: '600px', position: 'relative', zIndex: 1 }}>
         {/* Target div for Modern scripts */}
-        <div className={`hb-p-${formId}-1`} />
+        <div className={`hb-p-${formId}-${suffix}`} />
         {/* Target div for Legacy scripts */}
         <div className={`hb-p-${formId}`} />
       
