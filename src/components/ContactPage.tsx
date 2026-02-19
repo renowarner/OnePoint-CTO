@@ -1,7 +1,9 @@
 import './ContactPage.css';
 import { Link } from 'react-router-dom';
+import HoneyBookWidget from './HoneyBookWidget';
 
 const ContactPage = () => {
+  // Render the embedded contact form
   return (
     <div className="contact-page-container">
       <section id="contact" className="contact-section">
