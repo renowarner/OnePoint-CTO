@@ -1,46 +1,11 @@
-import { useState } from 'react';
 import './ContactPage.css';
 import { Link } from 'react-router-dom';
 
+import './ContactPage.css';
+import { Link } from 'react-router-dom';
+import HoneyBookWidget from './HoneyBookWidget';
+
 const ContactPage = () => {
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setError(null);
-
-    const data = Object.fromEntries(new FormData(e.currentTarget));
-    console.log('Submitting form data:', data);
-    
-    try {
-      const response = await fetch('https://formspree.io/f/mbdaypwz', {
-        method: 'POST',
-        body: JSON.stringify(data),
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
-      });
-
-      const result = await response.json();
-      console.log('Formspree response:', result);
-
-      if (response.ok) {
-        setSubmitted(true);
-      } else {
-        setError(result.error || 'Oops! There was a problem submitting your form');
-      }
-    } catch (err) {
-      console.error('Fetch error:', err);
-      setError('Oops! There was a problem submitting your form');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
     <div className="contact-page-container">
       <section id="contact" className="contact-section">
@@ -49,43 +14,15 @@ const ContactPage = () => {
             I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
           
-          {submitted ? (
-            <div className="submission-success">
-              <h3>Thank you!</h3>
-              <p>Your message has been sent. I'll get back to you as soon as possible.</p>
-              <button onClick={() => setSubmitted(false)} className="btn btn-secondary">Send another message</button>
-            </div>
-          ) : (
-            <form 
-              onSubmit={handleSubmit}
-              className="contact-form"
-            >
-              <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input type="text" id="name" name="name" required placeholder="Your Name" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" name="email" required placeholder="Your Email" />
-              </div>
-              <div className="form-group">
-                <label htmlFor="message">Note</label>
-                <textarea id="message" name="message" required placeholder="Your Message" rows={5}></textarea>
-              </div>
-              
-              {error && <p className="text-red-500 mb-4">{error}</p>}
+          <div className="honeybook-form-wrapper" style={{ marginTop: '2rem' }}>
+            {/* The widget will attempt to embed the form. If blocked, it shows a fallback button. */}
+            <HoneyBookWidget 
+              companyId="one_point_cto_297144"
+              formId="6993e7506da0cc0033145a07"
+            />
+          </div>
 
-              <button 
-                type="submit" 
-                className="btn btn-primary" 
-                disabled={isSubmitting}
-              >
-                {isSubmitting ? 'Sending...' : 'Send Message'}
-              </button>
-            </form>
-          )}
-
-          <div className="consultation-link">
+          <div className="consultation-link" style={{ marginTop: '4rem' }}>
             <span>Or </span>
             <Link to="/schedule-consultation">Schedule a Consultation</Link>
           </div>

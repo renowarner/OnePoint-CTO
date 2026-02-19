@@ -1,0 +1,115 @@
+.thank-you-container {
+  padding: 120px 20px; /* Increased top padding to clear fixed header */
+  background-color: var(--bg-navy);
+  color: white; /* Forced white for visibility check */
+  text-align: center;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Ensure z-index works */
+  z-index: 10;
+}
+
+.thank-you-content {
+  max-width: 800px;
+  background-color: var(--bg-navy-light);
+  padding: 60px;
+  border-radius: 12px;
+  border: 1px solid var(--bg-navy-lighter);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.thank-you-content h1 {
+  font-size: 3em;
+  color: var(--text-white);
+  margin-bottom: 20px;
+}
+
+.thank-you-content .divider {
+  width: 80px;
+  height: 4px;
+  background-color: var(--accent-cyan);
+  margin: 0 auto 30px;
+}
+
+.confirmation-text {
+  font-size: 1.2em;
+  margin-bottom: 50px;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.next-steps h3 {
+  color: var(--accent-cyan);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.next-steps p {
+  margin-bottom: 30px;
+  color: var(--text-slate);
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.action-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-navy);
+  padding: 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  color: var(--text-slate);
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-cyan);
+  background-color: var(--bg-navy-lighter);
+}
+
+.action-card .icon {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.action-card h4 {
+  color: var(--text-white);
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.action-card p {
+  font-size: 0.9em;
+  color: var(--text-gray);
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.home-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: transparent;
+  border: 1px solid var(--text-gray);
+  color: var(--text-gray);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.home-btn:hover {
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+}

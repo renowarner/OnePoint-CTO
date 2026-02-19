@@ -14,6 +14,7 @@ import WebPresenceGrowth from './components/WebPresenceGrowth';
 import BlogPage from './components/BlogPage';
 import BlogPost from './components/BlogPost';
 import AIChatbot from './components/AIChatbot';
+import ThankYouPage from './components/ThankYouPage';
 
 function App() {
   const location = useLocation();
@@ -44,6 +45,7 @@ function App() {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/thank-you" element={<ThankYouPage />} />
       </Routes>
       <Footer />
       <AIChatbot />
