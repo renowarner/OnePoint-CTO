@@ -12,27 +12,26 @@ const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId, children }) =
   useEffect(() => {
     setIsLocal(window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
 
-    // Prevent React Strict Mode from running this twice
-    if (initialized.current) return;
-    initialized.current = true;
-
     try {
-      // 1. Initialize Global Object safely
+      // 1. Initialize Global Object with NEW ID
       const w = window as any;
       w._HB_ = w._HB_ || {};
       w._HB_.pid = formId;
 
-      // 2. Check if script already exists to avoid duplicates
+      // 2. Force Script Reload
+      // We remove the existing script to force HoneyBook to re-initialize with the new PID.
       const scriptId = 'hb-placement-controller';
-      if (!document.getElementById(scriptId)) {
-        const script = document.createElement('script');
-        script.id = scriptId;
-        script.src = "https://widget.honeybook.com/assets_users_production/websiteplacements/placement-controller.min.js";
-        script.async = true;
-        
-        // 3. Append safely to body
-        document.body.appendChild(script);
+      const existingScript = document.getElementById(scriptId);
+      if (existingScript) {
+        existingScript.remove();
       }
+
+      const script = document.createElement('script');
+      script.id = scriptId;
+      script.src = "https://widget.honeybook.com/assets_users_production/websiteplacements/placement-controller.min.js";
+      script.async = true;
+      document.body.appendChild(script);
+
     } catch (err) {
       console.error("HoneyBook Widget Injection Error:", err);
     }

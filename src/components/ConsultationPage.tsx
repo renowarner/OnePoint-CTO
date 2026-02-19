@@ -1,26 +1,13 @@
-import { useEffect } from 'react';
 import './ConsultationPage.css';
+import HoneyBookWidget from './HoneyBookWidget';
 
 const ConsultationPage = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://assets.calendly.com/assets/external/widget.js';
-    script.async = true;
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
   return (
-    <div className="container">
-      <div className="consultation-content">
-        <div 
-          className="calendly-inline-widget" 
-          data-url="https://calendly.com/onepointcto/initial-consult?hide_event_type_details=1&hide_gdpr_banner=1" 
-          style={{ minWidth: '320px', height: '700px' }} 
-        />
+    <div className="consultation-page-container">
+      <div className="container">
+        <div className="consultation-content">
+          <HoneyBookWidget formId="69968c6b1304000028b011ef" />
+        </div>
       </div>
     </div>
   );
