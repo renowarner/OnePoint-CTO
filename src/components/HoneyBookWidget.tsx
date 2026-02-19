@@ -2,9 +2,10 @@ import React, { useEffect, useRef, useState } from 'react';
 
 interface HoneyBookWidgetProps {
   formId: string;
+  children?: React.ReactNode;
 }
 
-const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId }) => {
+const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId, children }) => {
   const [isLocal, setIsLocal] = useState(false);
   const initialized = useRef(false);
 
@@ -42,12 +43,36 @@ const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId }) => {
       backgroundColor: '#112240',
       border: '1px solid #233554',
       borderRadius: '12px',
-      padding: '40px',
+      padding: '20px',
       boxShadow: '0 15px 35px rgba(0, 0, 0, 0.4)',
       maxWidth: '800px',
-      margin: '0 auto'
+      width: '100%',
+      margin: '0 auto',
+      position: 'relative',
+      minHeight: '600px'
     }}>
-      <div className="hb-widget-container" style={{ width: '100%', minHeight: '600px', position: 'relative' }}>
+      {/* Loading Spinner */}
+      <div style={{
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        zIndex: 0
+      }}>
+        <div className="hb-spinner" style={{
+          width: '40px',
+          height: '40px',
+          border: '4px solid rgba(0, 210, 255, 0.1)',
+          borderLeftColor: '#00D2FF',
+          borderRadius: '50%',
+          animation: 'spin 1s linear infinite'
+        }} />
+        <style>{`
+          @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        `}</style>
+      </div>
+
+      <div className="hb-widget-container" style={{ width: '100%', minHeight: '600px', position: 'relative', zIndex: 1 }}>
         {/* Target div for the HoneyBook script */}
         <div className={`hb-p-${formId}-1`} />
       
@@ -60,6 +85,13 @@ const HoneyBookWidget: React.FC<HoneyBookWidgetProps> = ({ formId }) => {
         alt=""
       />
       </div>
+
+      {/* Render optional content (like the consultation link) inside the card */}
+      {children && (
+        <div style={{ marginTop: '30px', borderTop: '1px solid #233554', paddingTop: '20px' }}>
+          {children}
+        </div>
+      )}
     </div>
   );
 };
