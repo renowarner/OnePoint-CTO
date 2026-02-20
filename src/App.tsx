@@ -18,6 +18,7 @@ import ThankYouPage from './components/ThankYouPage';
 import ConsultationThankYouPage from './components/ConsultationThankYouPage';
 import LinkedInPage from './components/LinkedInPage';
 import CraigslistPage from './components/CraigslistPage';
+import HubTemplate from './components/HubTemplate';
 
 function App() {
   const location = useLocation();
@@ -33,9 +34,11 @@ function App() {
     }
   }, [location]);
 
+  const isHubPage = location.pathname.startsWith('/hub/');
+
   return (
     <>
-      <Header />
+      {!isHubPage && <Header />}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/schedule-consultation" element={<ConsultationPage />} />
@@ -52,8 +55,9 @@ function App() {
         <Route path="/consultation-thank-you" element={<ConsultationThankYouPage />} />
         <Route path="/linkedin" element={<LinkedInPage />} />
         <Route path="/craigslist" element={<CraigslistPage />} />
+        <Route path="/hub/template" element={<HubTemplate />} />
       </Routes>
-      <Footer />
+      {!isHubPage && <Footer />}
       <AIChatbot />
     </>
   );
