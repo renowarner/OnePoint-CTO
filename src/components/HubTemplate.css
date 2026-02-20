@@ -75,12 +75,28 @@
   transform: translateY(-2px);
 }
 
-/* Content Sections */
-.hub-section {
-  max-width: 800px;
+/* Content Grid Layout */
+.hub-main-content {
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* Left column wider */
+  gap: 30px;
   width: 100%;
+  align-items: stretch; /* Stretch columns to equal height */
+}
+
+.hub-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hub-column-right .hub-card {
+  height: 100%; /* Stretch right card to full column height */
+  display: flex;
+  flex-direction: column;
 }
 
 .hub-card {
@@ -88,7 +104,6 @@
   border-radius: 12px;
   padding: 30px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-  margin-bottom: 30px;
 }
 
 .hub-section-title {
@@ -130,36 +145,32 @@
   margin-top: auto;
   background-color: #1a202c; /* Dark Footer */
   color: #cbd5e0;
-  padding: 40px 20px;
+  padding: 15px 20px; /* Greatly reduced padding */
   text-align: center;
 }
 
 .hub-footer p {
-  margin: 0 0 20px 0;
-  font-size: 0.9rem;
+  margin: 0 0 10px 0;
+  font-size: 0.75rem; /* Smaller font */
 }
 
 .powered-by {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   color: #a0aec0;
-  font-size: 0.85rem;
+  font-size: 0.7rem; /* Smaller font */
   text-transform: uppercase;
   letter-spacing: 1px;
   text-decoration: none;
   transition: color 0.2s;
 }
 
-.powered-by:hover {
-  color: #fff;
-}
-
 .powered-by img {
-  height: 24px;
+  height: 16px; /* Smaller logo */
   width: auto;
-  opacity: 0.8;
+  opacity: 0.6;
   transition: opacity 0.2s;
 }
 
@@ -168,7 +179,11 @@
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+  .hub-main-content {
+    grid-template-columns: 1fr; /* Stack on mobile */
+  }
+  
   .hub-business-name {
     font-size: 2rem;
   }

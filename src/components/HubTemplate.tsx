@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import './HubTemplate.css';
-import HoneyBookWidget from './HoneyBookWidget';
 
 const HubTemplate = () => {
   return (
@@ -24,63 +23,59 @@ const HubTemplate = () => {
         </a>
       </div>
 
-      {/* About Section */}
-      <section className="hub-section">
-        <div className="hub-card">
-          <h2 className="hub-section-title">About Us</h2>
-          <p>
-            This is a brief description of the business. It explains what they do, 
-            who they serve, and why customers should choose them. This section is 
-            designed to build trust and provide essential context quickly.
-          </p>
-        </div>
-      </section>
+      {/* Main Content Grid */}
+      <div className="hub-main-content">
+        
+        {/* Left Column: About & Services */}
+        <div className="hub-column">
+          {/* About Section */}
+          <div className="hub-card">
+            <h2 className="hub-section-title">About Us</h2>
+            <p>
+              This is a brief description of the business. It explains what they do, 
+              who they serve, and why customers should choose them. This section is 
+              designed to build trust and provide essential context quickly.
+            </p>
+          </div>
 
-      {/* Services Section */}
-      <section className="hub-section" style={{ paddingTop: 0 }}>
-        <div className="hub-card">
-          <h2 className="hub-section-title">Our Services</h2>
-          <div className="hub-services-grid">
-            <div className="hub-service-item">
-              <h4>Service One</h4>
-              <p>Brief description of service.</p>
-            </div>
-            <div className="hub-service-item">
-              <h4>Service Two</h4>
-              <p>Brief description of service.</p>
-            </div>
-            <div className="hub-service-item">
-              <h4>Service Three</h4>
-              <p>Brief description of service.</p>
-            </div>
-            <div className="hub-service-item">
-              <h4>Service Four</h4>
-              <p>Brief description of service.</p>
+          {/* Services Section */}
+          <div className="hub-card">
+            <h2 className="hub-section-title">Our Services</h2>
+            <div className="hub-services-grid">
+              <div className="hub-service-item">
+                <h4>Service One</h4>
+                <p>Brief description of service.</p>
+              </div>
+              <div className="hub-service-item">
+                <h4>Service Two</h4>
+                <p>Brief description of service.</p>
+              </div>
+              <div className="hub-service-item">
+                <h4>Service Three</h4>
+                <p>Brief description of service.</p>
+              </div>
+              <div className="hub-service-item">
+                <h4>Service Four</h4>
+                <p>Brief description of service.</p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Contact Form Section */}
-      <section className="hub-section" style={{ paddingTop: 0 }}>
-        <div className="hub-card">
-          <h2 className="hub-section-title">Contact Us</h2>
-          <div className="honeybook-embed-wrapper">
-             {/* Placeholder for Client's HoneyBook Widget */}
-             <p style={{textAlign: 'center', color: '#718096', marginBottom: '20px'}}>
-               [Client Contact Form Placeholder]
-             </p>
-             <HoneyBookWidget 
-                formId="6993e75040496000079b463b" 
-                suffix="hub-template"
-                legacy={false}
-                leadSource="Hub Template"
-                directLink="https://companyname384300.hbportal.co/public/discovery-consult"
-                fallbackText="Trouble loading the form? Click here."
-              />
+        {/* Right Column: Appointment Scheduler */}
+        <div className="hub-column hub-column-right">
+          <div className="hub-card" style={{ padding: '0', overflow: 'hidden' }}>
+            {/* Calendly Inline Widget */}
+            <div 
+              className="calendly-inline-widget" 
+              data-url="https://calendly.com/onepointcto/initial-consult?hide_landing_page_details=1&hide_gdpr_banner=1" 
+              style={{ minWidth: '320px', height: '100%', flexGrow: 1 }} 
+            />
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async />
           </div>
         </div>
-      </section>
+        
+      </div>
 
       {/* Footer */}
       <footer className="hub-footer">

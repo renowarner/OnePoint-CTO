@@ -136,7 +136,7 @@ const AIChatbot: React.FC = () => {
     <div className="ai-chatbot-container">
       {!isOpen && (
         <button className="chat-toggle-btn" onClick={() => setIsOpen(true)}>
-          <MessageCircle size={30} />
+          <MessageCircle size={27} />
         </button>
       )}
 
