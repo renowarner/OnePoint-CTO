@@ -21,6 +21,8 @@ import CraigslistPage from './components/CraigslistPage';
 import HubTemplate from './components/HubTemplate';
 import HubProductPage from './components/HubProductPage';
 import FoundationPackagePage from './components/FoundationPackagePage';
+import AuditPage from './components/AuditPage';
+import VirtualCTOPage from './components/VirtualCTOPage';
 
 function App() {
   const location = useLocation();
@@ -47,7 +49,9 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/system-integration" element={<SystemIntegration />} />
-        <Route path="/system-administration" element={<SystemAdministration />} />
+        <Route path="/system-administration" element={<VirtualCTOPage />} />
+        <Route path="/virtual-cto" element={<VirtualCTOPage />} />
+        <Route path="/audit" element={<AuditPage />} />
         <Route path="/managed-ai-chatbots" element={<ManagedAiChatbotsPage />} />
         <Route path="/web-presence-growth" element={<WebPresenceGrowth />} />
         <Route path="/foundation-package" element={<FoundationPackagePage />} />

@@ -44,13 +44,16 @@ const Header = () => {
                   Services & Solutions
                 </NavLink>
                 <ul className="dropdown-menu">
-                  <li><NavLink to="/services" onClick={closeMenu}>Overview</NavLink></li>
-                  <li><NavLink to="/system-administration" onClick={closeMenu}>Virtual CTO Retainer</NavLink></li>
-                  <li><NavLink to="/foundation-package" onClick={closeMenu}>The Foundation Package</NavLink></li>
-                  <li><NavLink to="/system-integration" onClick={closeMenu}>Custom Technical Solutions</NavLink></li>
-                  <li><NavLink to="/managed-ai-chatbots" onClick={closeMenu}>Managed AI Chatbots</NavLink></li>
-                  <li><NavLink to="/web-presence-growth" onClick={closeMenu}>Web Presence & Growth</NavLink></li>
+                  <li className="menu-section-label">Core Services</li>
+                  <li><NavLink to="/audit" onClick={closeMenu}>The OnePoint Audit</NavLink></li>
                   <li><NavLink to="/onepoint-hub" onClick={closeMenu}>OnePoint Hub (Micro-Site)</NavLink></li>
+                  <li><NavLink to="/foundation-package" onClick={closeMenu}>The Foundation Package</NavLink></li>
+                  <li><NavLink to="/virtual-cto" onClick={closeMenu}>Virtual CTO Retainer</NavLink></li>
+                  <li className="menu-divider"></li>
+                  <li className="menu-section-label">Specialized Solutions</li>
+                  <li><NavLink to="/managed-ai-chatbots" onClick={closeMenu}>Managed AI Chatbots</NavLink></li>
+                  <li><NavLink to="/system-integration" onClick={closeMenu}>Custom Technical Solutions</NavLink></li>
+                  <li><NavLink to="/web-presence-growth" onClick={closeMenu}>SEO & Web Growth</NavLink></li>
                 </ul>
               </li>
               <li><NavLink to="/blog" onClick={closeMenu}>Blog</NavLink></li>
