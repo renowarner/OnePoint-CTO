@@ -66,7 +66,7 @@ function App() {
         <Route path="/hub/template" element={<HubTemplate />} />
       </Routes>
       {!isHubPage && <Footer />}
-      <AIChatbot />
+      {!isHubPage && <AIChatbot />}
     </>
   );
 }
