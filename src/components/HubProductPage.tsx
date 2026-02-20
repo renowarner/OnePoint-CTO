@@ -1,92 +1,98 @@
 import { Link } from 'react-router-dom';
 import './HubProductPage.css';
+import './WebPresenceGrowth.css'; // Import shared styles for consistency
 
 const HubProductPage = () => {
   return (
-    <div className="hub-product-container">
+    <div className="vcto-page-container">
       {/* Hero Section */}
-      <section className="hub-hero">
+      <section className="vcto-hero">
         <div className="container">
-          <div className="hero-content">
-            <h1 className="section-title">OnePoint <span className="text-cyan">Hub</span></h1>
-            <p className="hero-subtitle">Your Professional Micro-Presence.</p>
-            <p className="hero-description">
-              Stop losing leads because you don't have a website. Get a clean, high-performance 
-              digital headquarters that connects your clients directly to you. 
-              No fluff, just business.
-            </p>
-            <div className="hero-cta-group">
-              <Link to="/schedule-consultation" className="btn btn-primary">Build My Hub</Link>
-              <Link to="/hub/template" className="btn btn-secondary" target="_blank">View Live Demo</Link>
-            </div>
-          </div>
+          <h2 className="section-title">OnePoint <span className="text-cyan">Hub</span></h2>
+          <p className="vcto-intro">
+            Your essential digital headquarters. A professional, hosted micro-site 
+            that connects clients to you instantly.
+          </p>
         </div>
       </section>
 
-      {/* The Problem / Solution */}
-      <section className="hub-value-prop">
+      {/* Main Content */}
+      <section className="vcto-content">
         <div className="container">
-          <div className="value-grid">
-            <div className="value-card">
-              <h3>The Problem</h3>
+          <div className="vcto-grid">
+            
+            {/* Left Column: Text & Value */}
+            <div className="vcto-text">
+              <h3>The "Digital Business Card" Evolved</h3>
               <p>
-                Full websites are expensive ($3k+), slow to build, and require constant maintenance. 
-                But having <em>no</em> website means you look unprofessional and can't be found.
+                Not every business needs a complex, multi-page website immediately. 
+                But every business needs a professional, secure place to send leads. 
+                Social media profiles aren't enough—you don't own them, and they don't 
+                rank in search engines.
               </p>
-            </div>
-            <div className="value-card highlight">
-              <h3>The Solution</h3>
               <p>
-                A <strong>OnePoint Hub</strong>. A single, powerful page that acts as your digital business card, 
-                appointment scheduler, and service menu. Hosted, secure, and SEO-optimized.
+                The <strong>OnePoint Hub</strong> is the bridge. It's a single, high-performance 
+                landing page hosted on our premium infrastructure. It gives you a 
+                clean URL (`onepointcto.com/hub/yourname`), integrated scheduling, 
+                and instant credibility without the timeline or cost of a custom build.
               </p>
-            </div>
-          </div>
-        </div>
-      </section>
+              
+              <div className="vcto-pillars">
+                <div className="pillar">
+                  <h4>Speed to Market</h4>
+                  <p>We can launch your Hub in 48 hours. No lengthy design reviews or content delays. Just a clean, effective presence that works.</p>
+                </div>
+                <div className="pillar">
+                  <h4>Integrated Booking</h4>
+                  <p>Stop chasing emails. We embed your Calendly or HoneyBook scheduler directly on the page, converting visitors into appointments instantly.</p>
+                </div>
+                <div className="pillar">
+                  <h4>Built for Growth</h4>
+                  <p>Start here. When you're ready for a fully custom brand and multi-page site, we can seamlessly migrate you up. Your Hub grows with you.</p>
+                </div>
+              </div>
 
-      {/* Features Grid */}
-      <section className="hub-features">
-        <div className="container">
-          <h2 className="section-title center">What You Get</h2>
-          <div className="features-grid">
-            <div className="feature-item">
-              <h4>Instant Credibility</h4>
-              <p>A professional <code>onepointcto.com/hub/yourname</code> link to put on your Instagram, LinkedIn, and email signature.</p>
+              <div className="vcto-deep-dive mt-8">
+                <h3>Why not just a Linktree?</h3>
+                <p>
+                  Link trees are for influencers. <strong>Hubs are for businesses.</strong> 
+                  A Hub includes your branding, your "About" story, your service menu, 
+                  and SEO schema data that helps Google understand who you are. It's 
+                  an asset, not just a list of links.
+                </p>
+              </div>
             </div>
-            <div className="feature-item">
-              <h4>Integrated Scheduling</h4>
-              <p>Embed your Calendly or HoneyBook scheduler directly. Clients book time with you without leaving the page.</p>
-            </div>
-            <div className="feature-item">
-              <h4>Zero Maintenance</h4>
-              <p>We host it, secure it, and keep it fast. You just share the link and close deals.</p>
-            </div>
-            <div className="feature-item">
-              <h4>SEO Boost</h4>
-              <p>Benefit from our domain authority. Your hub is indexed by Google, helping you rank for your name and service.</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Pricing / CTA */}
-      <section className="hub-pricing">
-        <div className="container">
-          <div className="pricing-card">
-            <h2>Get Your Hub</h2>
-            <div className="price-tag">
-              <span className="amount">$250</span>
-              <span className="term">One-Time Setup</span>
+            {/* Right Column: Pricing Card */}
+            <div className="vcto-sidebar">
+              <div className="sidebar-card highlight-card">
+                <h4>OnePoint Hub Package</h4>
+                <p className="sidebar-subtitle">Launch Your Presence</p>
+                
+                <div className="hub-price-display">
+                  <span className="hub-price">$250</span>
+                  <span className="hub-term">One-Time Setup</span>
+                </div>
+                <div className="hub-recurring">
+                  + $50/mo Hosting & Management
+                </div>
+
+                <ul className="hub-features-list">
+                  <li>Professional Single-Page Design</li>
+                  <li><strong>onepointcto.com/hub/yourname</strong> URL</li>
+                  <li>Hosting, SSL, & Security Included</li>
+                  <li>Scheduler & Contact Form Integration</li>
+                  <li>Mobile-First Architecture</li>
+                </ul>
+                
+                <Link to="/schedule-consultation" className="btn btn-full">Start Your Hub</Link>
+                
+                <div className="demo-link-wrapper">
+                  <Link to="/hub/template" target="_blank" className="demo-link">See a Live Example →</Link>
+                </div>
+              </div>
             </div>
-            <ul className="pricing-features">
-              <li>Includes Design & Setup</li>
-              <li>Hosting & SSL Included</li>
-              <li>Mobile Optimized</li>
-              <li>Scheduler Integration</li>
-            </ul>
-            <Link to="/schedule-consultation" className="btn btn-primary btn-large">Start Now</Link>
-            <p className="pricing-note">Optional: $50/mo for ongoing updates and priority support.</p>
+
           </div>
         </div>
       </section>

@@ -1,192 +1,79 @@
-.hub-product-container {
-  padding-top: 80px; /* Offset for fixed header */
-  background-color: var(--bg-navy);
-  color: var(--text-white);
-  min-height: 100vh;
-}
+/* Inheriting core layout from WebPresenceGrowth.css (vcto-* classes) */
 
-.hub-hero {
-  padding: 80px 0;
+/* Specific overrides for the Hub Pricing Card */
+.hub-price-display {
+  margin: 20px 0 5px;
   text-align: center;
 }
 
-.hub-hero .hero-subtitle {
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--text-white);
-  margin-bottom: 20px;
-}
-
-.hub-hero .hero-description {
-  font-size: 1.2rem;
-  color: var(--text-slate);
-  max-width: 700px;
-  margin: 0 auto 40px;
-  line-height: 1.6;
-}
-
-.hero-cta-group {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.hub-value-prop {
-  padding: 60px 0;
-  background-color: var(--bg-navy-light);
-}
-
-.value-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
-
-.value-card {
-  padding: 40px;
-  border-radius: 12px;
-  border: 1px solid var(--bg-navy-lighter);
-}
-
-.value-card.highlight {
-  border-color: var(--accent-cyan);
-  background: rgba(0, 210, 255, 0.05);
-}
-
-.value-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
-  color: var(--text-white);
-}
-
-.value-card p {
-  color: var(--text-slate);
-  line-height: 1.6;
-}
-
-.hub-features {
-  padding: 80px 0;
-}
-
-.features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.feature-item {
-  background-color: var(--bg-navy-light);
-  padding: 30px;
-  border-radius: 8px;
-  transition: transform 0.2s;
-}
-
-.feature-item:hover {
-  transform: translateY(-5px);
-}
-
-.feature-item h4 {
-  color: var(--accent-cyan);
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-}
-
-.feature-item p {
-  color: var(--text-slate);
-  font-size: 0.95rem;
-  line-height: 1.5;
-}
-
-.feature-item code {
-  background: rgba(0, 0, 0, 0.3);
-  padding: 2px 6px;
-  border-radius: 4px;
-  font-family: monospace;
-  color: var(--text-gray);
-}
-
-.hub-pricing {
-  padding: 80px 0;
-  text-align: center;
-}
-
-.pricing-card {
-  max-width: 500px;
-  margin: 0 auto;
-  background-color: var(--bg-navy-light);
-  padding: 50px;
-  border-radius: 16px;
-  border: 1px solid var(--accent-cyan);
-  box-shadow: 0 10px 30px rgba(0, 210, 255, 0.1);
-}
-
-.pricing-card h2 {
-  font-size: 2rem;
-  color: var(--text-white);
-  margin-bottom: 20px;
-}
-
-.price-tag {
-  margin-bottom: 30px;
-}
-
-.price-tag .amount {
-  font-size: 3.5rem;
+.hub-price {
+  font-size: 3rem;
   font-weight: 700;
   color: var(--accent-cyan);
-  display: block;
   line-height: 1;
+  display: block;
 }
 
-.price-tag .term {
-  font-size: 1rem;
+.hub-term {
+  font-size: 0.9rem;
   color: var(--text-slate);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.pricing-features {
+.hub-recurring {
+  text-align: center;
+  color: var(--text-white);
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.hub-features-list {
   list-style: none;
   padding: 0;
-  margin: 0 0 40px 0;
-  text-align: left;
-  display: inline-block;
+  margin: 0 0 30px 0;
 }
 
-.pricing-features li {
-  margin-bottom: 12px;
+.hub-features-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: var(--text-slate);
+  font-size: 0.95rem;
+}
+
+.hub-features-list li:last-child {
+  border-bottom: none;
+}
+
+.hub-features-list li strong {
   color: var(--text-white);
-  position: relative;
-  padding-left: 25px;
 }
 
-.pricing-features li::before {
-  content: '✓';
+.highlight-card {
+  border: 1px solid var(--accent-cyan);
+  background: rgba(10, 25, 47, 0.8); /* Dark navy background */
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.1);
+}
+
+.demo-link-wrapper {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.demo-link {
   color: var(--accent-cyan);
-  position: absolute;
-  left: 0;
-  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--accent-cyan);
+  transition: all 0.2s;
 }
 
-.pricing-note {
-  margin-top: 20px;
-  font-size: 0.9rem;
-  color: var(--text-gray);
-  font-style: italic;
+.demo-link:hover {
+  color: var(--text-white);
+  border-bottom-style: solid;
 }
 
 .text-cyan {
   color: var(--accent-cyan);
-}
-
-.center {
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .value-grid {
-    grid-template-columns: 1fr;
-  }
 }
