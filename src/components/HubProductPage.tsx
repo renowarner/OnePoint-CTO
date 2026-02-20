@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './HubProductPage.css';
-import './WebPresenceGrowth.css'; // Import shared styles for consistency
+import './WebPresenceGrowth.css';
 
 const HubProductPage = () => {
   return (
@@ -23,7 +23,7 @@ const HubProductPage = () => {
             
             {/* Left Column: Text & Value */}
             <div className="vcto-text">
-              <h3>The "Digital Business Card" Evolved</h3>
+              <h3>The Professional Standard</h3>
               <p>
                 Not every business needs a complex, multi-page website immediately. 
                 But every business needs a professional, secure place to send leads. 
@@ -43,8 +43,8 @@ const HubProductPage = () => {
                   <p>We can launch your Hub in 48 hours. No lengthy design reviews or content delays. Just a clean, effective presence that works.</p>
                 </div>
                 <div className="pillar">
-                  <h4>Integrated Booking</h4>
-                  <p>Stop chasing emails. We embed your Calendly or HoneyBook scheduler directly on the page, converting visitors into appointments instantly.</p>
+                  <h4>Seamless Scheduling</h4>
+                  <p>We integrate your existing calendar (Google, Outlook) or set up a professional Calendly system for you. Clients book time without the email back-and-forth.</p>
                 </div>
                 <div className="pillar">
                   <h4>Built for Growth</h4>
@@ -53,12 +53,12 @@ const HubProductPage = () => {
               </div>
 
               <div className="vcto-deep-dive mt-8">
-                <h3>Why not just a Linktree?</h3>
+                <h3>Ongoing Management Included</h3>
                 <p>
-                  Link trees are for influencers. <strong>Hubs are for businesses.</strong> 
-                  A Hub includes your branding, your "About" story, your service menu, 
-                  and SEO schema data that helps Google understand who you are. It's 
-                  an asset, not just a list of links.
+                  This isn't a DIY builder. We handle the hosting, security, and updates. 
+                  Need to change your hours? Update a service description? Swap a photo? 
+                  Your monthly plan includes <strong>1 hour of support every month</strong> so your 
+                  Hub is always up to date.
                 </p>
               </div>
             </div>
@@ -81,8 +81,8 @@ const HubProductPage = () => {
                   <li>Professional Single-Page Design</li>
                   <li><strong>onepointcto.com/hub/yourname</strong> URL</li>
                   <li>Hosting, SSL, & Security Included</li>
-                  <li>Scheduler & Contact Form Integration</li>
-                  <li>Mobile-First Architecture</li>
+                  <li>Scheduler Integration (Calendly Setup Included)</li>
+                  <li><strong>1 Hour/Mo Support & Content Updates</strong></li>
                 </ul>
                 
                 <Link to="/schedule-consultation" className="btn btn-full">Start Your Hub</Link>
