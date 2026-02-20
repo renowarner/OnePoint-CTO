@@ -19,6 +19,7 @@ import ConsultationThankYouPage from './components/ConsultationThankYouPage';
 import LinkedInPage from './components/LinkedInPage';
 import CraigslistPage from './components/CraigslistPage';
 import HubTemplate from './components/HubTemplate';
+import HubProductPage from './components/HubProductPage';
 
 function App() {
   const location = useLocation();
@@ -48,6 +49,7 @@ function App() {
         <Route path="/system-administration" element={<SystemAdministration />} />
         <Route path="/managed-ai-chatbots" element={<ManagedAiChatbotsPage />} />
         <Route path="/web-presence-growth" element={<WebPresenceGrowth />} />
+        <Route path="/onepoint-hub" element={<HubProductPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:id" element={<BlogPost />} />
         <Route path="/contact" element={<ContactPage />} />

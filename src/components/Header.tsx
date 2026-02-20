@@ -49,6 +49,7 @@ const Header = () => {
                   <li><NavLink to="/system-integration" onClick={closeMenu}>Custom Technical Solutions</NavLink></li>
                   <li><NavLink to="/managed-ai-chatbots" onClick={closeMenu}>Managed AI Chatbots</NavLink></li>
                   <li><NavLink to="/web-presence-growth" onClick={closeMenu}>Web Presence & Growth</NavLink></li>
+                  <li><NavLink to="/onepoint-hub" onClick={closeMenu}>OnePoint Hub (Micro-Site)</NavLink></li>
                 </ul>
               </li>
               <li><NavLink to="/blog" onClick={closeMenu}>Blog</NavLink></li>
