@@ -16,7 +16,7 @@
 /* Hero Section */
 .hero-section {
   text-align: center;
-  padding: 160px 0;
+  padding: 200px 0 160px 0; /* Increased top padding */
   background-color: transparent;
 }
 
