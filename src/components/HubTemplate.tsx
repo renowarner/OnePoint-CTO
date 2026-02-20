@@ -6,20 +6,20 @@ const HubTemplate = () => {
     <div className="hub-container">
       {/* Header / Digital Card Top */}
       <header className="hub-header">
-        <h1 className="hub-business-name">Business Name</h1>
-        <p className="hub-tagline">Your Trusted Local Service Provider</p>
+        <h1 className="hub-business-name">GreenLeaf Landscaping</h1>
+        <p className="hub-tagline">Premium Lawn Care & Hardscaping in Seattle</p>
       </header>
 
       {/* Action Buttons */}
       <div className="hub-actions">
         <a href="tel:+15555555555" className="hub-btn hub-btn-primary">
-          Call Now
+          Call for Quote
         </a>
-        <a href="mailto:contact@business.com" className="hub-btn hub-btn-secondary">
+        <a href="mailto:contact@greenleaf.com" className="hub-btn hub-btn-secondary">
           Email Us
         </a>
         <a href="#" className="hub-btn hub-btn-secondary">
-          Get Directions
+          Service Area
         </a>
       </div>
 
@@ -32,9 +32,11 @@ const HubTemplate = () => {
           <div className="hub-card">
             <h2 className="hub-section-title">About Us</h2>
             <p>
-              This is a brief description of the business. It explains what they do, 
-              who they serve, and why customers should choose them. This section is 
-              designed to build trust and provide essential context quickly.
+              GreenLeaf Landscaping has been serving homeowners in the Greater Seattle area 
+              since 2015. We are a family-owned business dedicated to reliability, 
+              eco-friendly practices, and attention to detail. Whether you need weekly 
+              mowing or a complete backyard renovation, our team treats your property 
+              like our own.
             </p>
           </div>
 
@@ -43,20 +45,20 @@ const HubTemplate = () => {
             <h2 className="hub-section-title">Our Services</h2>
             <div className="hub-services-grid">
               <div className="hub-service-item">
-                <h4>Service One</h4>
-                <p>Brief description of service.</p>
+                <h4>Lawn Maintenance</h4>
+                <p>Weekly mowing, edging, and fertilization programs.</p>
               </div>
               <div className="hub-service-item">
-                <h4>Service Two</h4>
-                <p>Brief description of service.</p>
+                <h4>Hardscaping</h4>
+                <p>Patios, retaining walls, and walkway installation.</p>
               </div>
               <div className="hub-service-item">
-                <h4>Service Three</h4>
-                <p>Brief description of service.</p>
+                <h4>Irrigation</h4>
+                <p>Sprinkler system installation, repair, and winterization.</p>
               </div>
               <div className="hub-service-item">
-                <h4>Service Four</h4>
-                <p>Brief description of service.</p>
+                <h4>Seasonal Cleanup</h4>
+                <p>Leaf removal, pruning, and mulch application.</p>
               </div>
             </div>
           </div>
@@ -79,7 +81,7 @@ const HubTemplate = () => {
 
       {/* Footer */}
       <footer className="hub-footer">
-        <p>&copy; {new Date().getFullYear()} Business Name. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} GreenLeaf Landscaping. Licensed, Bonded & Insured.</p>
         
         <Link to="/" className="powered-by">
           Powered by
