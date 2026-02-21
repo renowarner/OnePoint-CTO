@@ -35,7 +35,7 @@ const VirtualCTOPage = () => {
               <div className="vcto-pillars">
                 <div className="pillar">
                   <h4>Strategic Roadmap</h4>
-                  <p>We don't just react to problems; we plan for growth. We maintain a rolling 12-month technical roadmap aligning your software stack with your business goals.</p>
+                  <p>We don't just react to problems; we plan for growth. We maintain a rolling technical roadmap aligning your software stack with your business goals.</p>
                 </div>
                 <div className="pillar">
                   <h4>Vendor Management</h4>
@@ -52,7 +52,11 @@ const VirtualCTOPage = () => {
                 <p>
                   Most businesses have a "web guy," an "IT guy," and a "marketing guy." 
                   That's three bills and three disconnected systems. We integrate them all. 
-                  One point of contact. One cohesive strategy. Total accountability.
+                </p>
+                <p>
+                  From initial audit to long-term retainer, we take full ownership of your technology. 
+                  We don't just patch holes; we rebuild your system stacks from the ground up to ensure 
+                  security, scalability, and total accountability. One point of contact. One cohesive strategy.
                 </p>
               </div>
             </div>
