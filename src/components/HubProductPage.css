@@ -36,10 +36,11 @@
 }
 
 .hub-features-list li {
-  padding: 8px 0;
+  padding: 8px 0 8px 25px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
   color: var(--text-slate);
   font-size: 0.95rem;
+  position: relative;
 }
 
 .hub-features-list li:last-child {

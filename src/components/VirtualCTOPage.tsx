@@ -67,7 +67,7 @@ const VirtualCTOPage = () => {
                   <span className="hub-term">Per Month</span>
                 </div>
                 <div className="hub-recurring">
-                  Cancel anytime with 30 days notice
+                  Long-term strategic partnership
                 </div>
 
                 <ul className="hub-features-list">

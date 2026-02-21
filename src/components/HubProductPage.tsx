@@ -74,7 +74,7 @@ const HubProductPage = () => {
                   <span className="hub-term">One-Time Setup</span>
                 </div>
                 <div className="hub-recurring">
-                  + $50/mo Hosting & Management
+                  + $50/mo Management
                 </div>
 
                 <ul className="hub-features-list">
